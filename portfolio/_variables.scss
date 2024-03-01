@@ -213,7 +213,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: 3px;
 }
 
@@ -387,6 +387,27 @@ p.subtitle.lead.center {
 
 h4.card-title.center {
   text-align: center;
+}
+
+.about-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22em;
+}
+
+.hero {
+  font-family: var(--sans-serif);
+  margin: 4rem 0;
+  text-wrap: balance;
+}
+
+.hero h1 {
+  font-size: $h2-font-size;
+  font-style: normal;
+  font-family: var(--sans-serif);
+  line-height: 1;
+  margin: 1rem 0;
 }
 
 .button {

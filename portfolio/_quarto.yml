@@ -28,6 +28,6 @@ website:
 
 format:
   html:
-    theme: "_variables.scss"
+    theme: ["_variables.scss", default]
     toc: true
     link-external-newwindow: true
