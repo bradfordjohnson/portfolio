@@ -399,7 +399,13 @@ h4.card-title.center {
 .hero {
   font-family: var(--sans-serif);
   margin: 4rem 0;
-  text-wrap: balance;
+  // text-wrap: stable;
+  // text-wrap: balance;
+}
+
+.img-fluid {
+  height: auto;
+  width: 70%;
 }
 
 .hero h1 {
@@ -408,8 +414,21 @@ h4.card-title.center {
   font-family: var(--sans-serif);
   line-height: 1;
   margin: 1rem 0;
+  text-wrap: balance;
 }
 
+.hero p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+// .g-col-5 {
+//   display:flex;
+//   align-items: center;
+//   text-align: center;
+// }
 .button {
   text-align: center;
 }

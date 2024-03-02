@@ -17,75 +17,52 @@ about:
 
 toc: false
 ---
-:::{.column-screen-inset}
-:::{#hero-heading}
+<div class="column-screen-inset">
+<div id="hero-heading">
 <div class=hero>
 <h1>Hi, I'm Ford. My specialty lies in data analysis and crafting compelling visualizations.</h1>
 </div>
-:::
+</div>
 <br>
 <br>
 
-::: {.grid}
-:::{.g-col-1}
-:::
-::: {.g-col-4}
 
-### Data Analytics
-
-I specialize in creating custom visuals that enhance data understanding, and dashboards that empower data-driven decision-making. My approach blends creativity and analytical rigor to deliver not just visuals, data analysis, and dashboards; but a unified and impactful data story that resonates with your business objectives.
-
+<div class="grid">
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Data Analytics</h1>
+<p>I specialize in creating custom visuals that enhance data understanding, and dashboards that empower data-driven decision-making. My approach blends creativity and analytical rigor to deliver not just visuals, data analysis, and dashboards; but a unified and impactful data story that resonates with your business objectives.</p>
+</div>
 <!-- <small class="text-muted"></small> -->
-:::
-
-:::{.g-col-6}
-![](visuals/owid-energy.png){.lightbox group="gallery" width="70%"}
-:::
-:::
-:::{.g-col-1}
-:::
-<br>
-<br>
-
-
-::: {.grid}
-:::{.g-col-1}
-:::
-::: {.g-col-4}
-![](visuals/seinfeld-sentiment.png.){.lightbox group="gallery" width="100%"}
-
-:::
-
-:::{.g-col-4}
-### Data Warehousing & Pipelines
-
-Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
-
-<!-- <small class="text-muted"></small> -->
-
-:::
-:::{.g-col-1}
-:::
-:::
-<br>
-<br>
-
-::: {.grid}
-:::{.g-col-1}
-:::
-::: {.g-col-4}
-
-### Data Storytelling
-
+</div>
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Data Storytelling</h1>
 Each data narrative is distinctive, tailored to suit the specific requirements of your business. Collaborating closely with you, I strive to comprehend your unique objectives, guaranteeing that the visualizations I craft harmonize with your goals and captivate your audience. My personalized methodology ensures that data insights are delivered in the most compelling manner possible.
-
+</div>
+</div>
+</div>
+<div class="grid">
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Data Warehousing & Pipelines</h1>
+Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
+</div>
+</div>
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Ad Hoc Analysis</h1>
+For understanding the nuances of your data, I provide ad hoc analysis services. I can help you uncover hidden insights, identify trends, and make data-driven decisions. My approach is to provide you with the tools and insights you need to make informed decisions.
+</div>
 <!-- <small class="text-muted"></small> -->
-:::
-
-:::{.g-col-6}
-![](visuals/african-languages.png){.lightbox group="gallery" width="60%"}
-:::
-:::
-:::{.g-col-1}
-:::
-:::
+</div>
+</div>
+</div>
