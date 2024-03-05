@@ -213,7 +213,7 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
+  // text-transform: uppercase;
   letter-spacing: 3px;
 }
 
@@ -294,38 +294,7 @@ th {
 
 nav a.nav-link:hover {
   border-bottom: 2px solid #333;
-  /* You can customize the color and thickness */
 }
-
-// .card {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-//   margin: 10px;
-//   padding: 10px;
-//   border: 1px solid #ddd;
-//   border-radius: 5px;
-//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-//   width: calc(33% - 40px);
-//   min-width: 300px;
-// }
-
-// .card-header h3 {
-//   margin: 0px;
-//   font-size: 1.5rem;
-//   flex: 1;
-// }
-
-// .card-header {
-//   background-color: white;
-//   display: flex;
-//   //align-items: center;
-// }
-
-// .card-body p {
-//   margin: 0;
-//   font-size: 1.1rem;
-// }
 
 .card {
   --bs-card-spacer-y: 1rem;
@@ -387,6 +356,42 @@ p.subtitle.lead.center {
 
 h4.card-title.center {
   text-align: center;
+}
+
+.about-contents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 22em;
+}
+
+.hero {
+  font-family: var(--sans-serif);
+  margin: 4rem 0;
+  // text-wrap: stable;
+  // text-wrap: balance;
+}
+
+.img-fluid {
+  height: auto;
+  width: 70%;
+}
+
+.hero h1 {
+  font-size: $h2-font-size;
+  font-style: normal;
+  font-family: var(--sans-serif);
+  line-height: 1;
+  margin: 1rem 0;
+  text-wrap: balance;
+}
+
+.hero p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .button {

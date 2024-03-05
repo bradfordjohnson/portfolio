@@ -1,178 +1,85 @@
 ---
-format:
-  html:
-    page-layout: full
-    anchor-sections: false
-execute:
-  echo: false
-  output: false
+title: "Bradford Johnson"
+subtitle: "Data Analyst | Visualization Engineer"
+about:
+  id: hero-heading
+  template: trestles
+  image: visuals/profile.jpg
+  image-width: 15em
+  image-shape: rounded
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://linkedin.com/in/bradford-ford-johnson
+    - icon: github
+      text: Github
+      href: https://github.com/bradfordjohnson
+
+toc: false
 ---
-
-<h1 class="title center">Bradford Johnson</h1>
-<p class="subtitle lead center">Data Analyst & Visualization Engineer</p>
-<div class="description center">Translating complex data into meaningful narratives that drive business success.
-</div>
-
-<div class="button style">
-<a href="mailto:bradfordljohnson@outlook.com" class="btn btn-outline-primary center">Get in touch</a>
-</div> 
-
-<!---bold span--->
-<!--- <span class="bold-text"></span>--->
-
-<div class="card-group">
-<div class="card bg-secondary mb-3">
-<div class="card-body">
-<h4 class="card-title">Data Visualization</h4>
-<p class="card-text"> 
-  I specialize in creating custom visuals that enhance data understanding, and dashboards that empower data-driven decision-making. My approach blends creativity and analytical rigor to deliver not just visuals, data analysis, and dashboards; but a unified and impactful data story that resonates with your business objectives.
-</p>
+<div class="column-screen-inset">
+<div id="hero-heading">
+<div class=hero>
+<h1>Hi, I'm Ford. My specialty lies in data analysis and crafting compelling visualizations.</h1>
 </div>
 </div>
+<br>
+<br>
 
-<div class="card bg-secondary mb-3">
-<div class="card-body">
-<h4 class="card-title">Data Warehousing & Pipelines</h4>
-<p class="card-text"> 
-  Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
-</p>
+
+<div class="grid">
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Data Analytics</h1>
+<p>I specialize in crafting custom visuals and dashboards that not only enhance data comprehension but also empower data-driven decision-making. By seamlessly integrating creativity with analytical precision, I offer a comprehensive data narrative tailored to your specific business objectives.</p>
+</div>
+<!-- <small class="text-muted"></small> -->
+</div>
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Data Storytelling</h1>
+<p>Every data narrative is uniquely tailored to your business's needs. Through close collaboration, I ensure that the visualizations I create not only meet your objectives but also engage your audience. With a personalized approach, I deliver data insights in a clear, compelling, and professional manner.</p>
 </div>
 </div>
 </div>
-
-<div class="card-group">
-<div class="card bg-secondary mb-3">
-<div class="card-body">
-<h4 class="card-title">Data Storytelling</h4>
-<p class="card-text"> 
-  Each data narrative is distinctive, tailored to suit the specific requirements of your business. Collaborating closely with you, I strive to comprehend your unique objectives, guaranteeing that the visualizations I craft harmonize with your goals and captivate your audience. My personalized methodology ensures that data insights are delivered in the most compelling manner possible.
-</p>
+<div class="grid">
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Data Warehousing & Pipelines</h1>
+<p>I specialize in exploring data intricacies and providing tailored analysis services. From uncovering hidden insights to identifying trends, my goal is to empower data-driven decision-making by equipping you with the necessary insights and tools to navigate your data effectively.</p>
 </div>
 </div>
-
-<div class="card bg-secondary mb-3">
-<div class="card-body">
-<h4 class="card-title">Data Analysis & Insights</h4>
-<p class="card-text"> 
-  Unraveling the nuances of customer sentiment, exploring the intricacies of lifetime value, and dynamically evaluating trends, I navigate the complexities of data with a keen and experiential touch. Beyond marketing, these insights seamlessly blend into a comprehensive analytical framework, ensuring a thorough understanding for strategic decision-making across various facets of your business.
-</p>
+<div class=g-col-1>
+</div>
+<div class=g-col-4>
+<div class=hero-2>
+<h1>Ad Hoc Analysis</h1>
+<p>Specializing in the exploration of data intricacies, I provide tailored analysis services. From uncovering hidden insights to recognizing trends, my focus is on empowering data-driven decision-making. My aim is to equip you with the necessary insights and tools for navigating your data landscape effectively.</p>
+</div>
+<!-- <small class="text-muted"></small> -->
 </div>
 </div>
+<div class="grid">
+<div class=g-col-1>
 </div>
+<div class=g-col-10>
+<div class=hero-2c>
+<br>
+<h1>Gallery</h1>
+<div class="gallery">
+<p><a href="visuals/owid-energy.png" class="lightbox" data-gallery="gallery"><img src="visuals/owid-energy.png" class="img-fluid" style="width:65.0%"></a>
+<a href="visuals/topgolf.png" class="lightbox" data-gallery="gallery"><img src="visuals/topgolf.png" class="img-fluid" style="width:30.0%"></a>
 
-<!---center title in this div--->
-<div class="card">
-<div class="card-body">
-<h4 class="card-title center">About Me</h4>
-<p class="card-text">
-Hi, I'm Ford—a data analyst with a distinct flair for crafting compelling visuals that tell stories using ggplot2 and other libraries. I leverage Google Cloud for ETL pipelines using tools like Dataform and BigQuery. Create interactive dashboards using Looker Studio, Shiny and Tableau. My experience spans Google Analytics, web analytics, SEO, social research, and IT. Currently learning React, Node.js, and D3 for data visualization and data-driven app development. I contribute to businesses' success by transforming data into compelling stories that empower informed decision-making and shape strategic success.
-</p>
-</div>
-</div>
-
-<!---add picture--->
-
-<!---center this div--->
-<div class="card">
-<div class="card-body center">
-<h4 class="card-title">Gallery</h4>
-<p class="card-text">A sample of my work</p>
+<a href="visuals/african-languages.png" class="lightbox" data-gallery="gallery"><img src="visuals/african-languages.png" class="img-fluid" style="width:35.0%"></a>
+<a href="visuals/seinfeld-sentiment.png" class="lightbox" data-gallery="gallery"><img src="visuals/seinfeld-sentiment.png" class="img-fluid" style="width:60.0%"></a></p>
 </div>
 </div>
-
-<!---add visual gallery grid--->
-::: gallery
-![](visuals/owid-energy.png){.lightbox group="gallery" width="65%"} ![](visuals/topgolf.png){.lightbox group="gallery" width="30%"}
-![](visuals/african-languages.png){.lightbox group="gallery" width="35%"} ![](visuals/seinfeld-sentiment.png){.lightbox group="gallery" width="60%"}
-
-:::
-<!---<div class="chart"></div>--->
-
-```{ojs}
-d3 = require("d3")
-
-function generateNormalData(mean, stdDev, resolution) {
-  const normalData = [];
-  const step = 1 / resolution;
-
-  for (let x = 0; x <= 1; x += step) {
-    const exponent = -((x - mean) ** 2) / (2 * stdDev ** 2);
-    const y = (1 / (stdDev * Math.sqrt(2 * Math.PI))) * Math.exp(exponent);
-    normalData.push({ x, y });
-  }
-
-  return normalData;
-}
-
-chartContainer = d3.select("#chart");
-
-width = window.innerWidth * 0.3;
-height = window.innerHeight * 0.15;
-
-mean = 0.5;
-
-stdDev = 0.1;
-
-resolution = 100;
-
-data = generateNormalData(mean, stdDev, resolution);
-
-data2stdDev = generateNormalData(mean + 2 * stdDev, stdDev, resolution);
-
-xScale = d3.scaleLinear()
-  .domain([0, d3.max(data, d => d.x)])
-  .range([0, width]);
-
-yScale = d3.scaleLinear()
-  .domain([0, d3.max(data, d => d.y)])
-  .range([height, 0]);
-
-line = d3.line()
-  .x(d => xScale(d.x))
-  .y(d => yScale(d.y));
-
-margin = ({ top: 20, right: 20, bottom: 20, left: 20 });
-
-svg = d3.select("#chart")
-  .append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-  .attr("transform", `translate(${margin.left},${margin.top})`);
-
- svg.append("path")
-  .data([data])
-  .attr("class", "line")
-  .attr("d", line)
-  .style("stroke", "#1a1a1a")
-  .style("stroke-width", 2)
-  .style("fill", "none")
-  .transition()
-  .duration(2500)
-  .attrTween("stroke-dasharray", function () {
-    const totalLength = this.getTotalLength();
-    return function (t) {
-      return (d3.interpolateString("0," + totalLength, totalLength + ",0"))(t);
-    };
-  });
-
-svg.append("path")
-  .data([data2stdDev])
-  .attr("class", "line")
-  .attr("d", line)
-  .style("stroke", "#d9534f")
-  .style("stroke-width", 2)
-  .style("fill", "none")
-  .transition()
-  .duration(4000)
-  .attrTween("stroke-dasharray", function () {
-    const totalLength = this.getTotalLength();
-    return function (t) {
-      return (d3.interpolateString("0," + totalLength, totalLength + ",0"))(t);
-    };
-  });
-
-xAxis = d3.axisBottom(xScale);
-
-yAxis = d3.axisLeft(yScale);
-```
+<!-- <small class="text-muted"></small> -->
+</div>
+</div>
