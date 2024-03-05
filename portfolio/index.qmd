@@ -33,7 +33,7 @@ toc: false
 <div class=g-col-4>
 <div class=hero-2>
 <h1>Data Analytics</h1>
-<p>I specialize in creating custom visuals that enhance data understanding, and dashboards that empower data-driven decision-making. My approach blends creativity and analytical rigor to deliver not just visuals, data analysis, and dashboards; but a unified and impactful data story that resonates with your business objectives.</p>
+<p>I specialize in crafting custom visuals and dashboards that not only enhance data comprehension but also empower data-driven decision-making. By seamlessly integrating creativity with analytical precision, I offer a comprehensive data narrative tailored to your specific business objectives.</p>
 </div>
 <!-- <small class="text-muted"></small> -->
 </div>
@@ -42,7 +42,7 @@ toc: false
 <div class=g-col-4>
 <div class=hero-2>
 <h1>Data Storytelling</h1>
-Each data narrative is distinctive, tailored to suit the specific requirements of your business. Collaborating closely with you, I strive to comprehend your unique objectives, guaranteeing that the visualizations I craft harmonize with your goals and captivate your audience. My personalized methodology ensures that data insights are delivered in the most compelling manner possible.
+<p>Every data narrative is uniquely tailored to your business's needs. Through close collaboration, I ensure that the visualizations I create not only meet your objectives but also engage your audience. With a personalized approach, I deliver data insights in a clear, compelling, and professional manner.</p>
 </div>
 </div>
 </div>
@@ -52,7 +52,7 @@ Each data narrative is distinctive, tailored to suit the specific requirements o
 <div class=g-col-4>
 <div class=hero-2>
 <h1>Data Warehousing & Pipelines</h1>
-Experienced in building distributed systems and ETL pipelines, I specialize in creating unified data ecosystems. I streamline workflows and ensure seamless data transformation, aiming to facilitate insightful decision-making across the entire system.
+<p>I specialize in exploring data intricacies and providing tailored analysis services. From uncovering hidden insights to identifying trends, my goal is to empower data-driven decision-making by equipping you with the necessary insights and tools to navigate your data effectively.</p>
 </div>
 </div>
 <div class=g-col-1>
@@ -60,9 +60,26 @@ Experienced in building distributed systems and ETL pipelines, I specialize in c
 <div class=g-col-4>
 <div class=hero-2>
 <h1>Ad Hoc Analysis</h1>
-For understanding the nuances of your data, I provide ad hoc analysis services. I can help you uncover hidden insights, identify trends, and make data-driven decisions. My approach is to provide you with the tools and insights you need to make informed decisions.
+<p>Specializing in the exploration of data intricacies, I provide tailored analysis services. From uncovering hidden insights to recognizing trends, my focus is on empowering data-driven decision-making. My aim is to equip you with the necessary insights and tools for navigating your data landscape effectively.</p>
 </div>
 <!-- <small class="text-muted"></small> -->
 </div>
+</div>
+<div class="grid">
+<div class=g-col-1>
+</div>
+<div class=g-col-10>
+<div class=hero-2c>
+<br>
+<h1>Gallery</h1>
+<div class="gallery">
+<p><a href="visuals/owid-energy.png" class="lightbox" data-gallery="gallery"><img src="visuals/owid-energy.png" class="img-fluid" style="width:65.0%"></a>
+<a href="visuals/topgolf.png" class="lightbox" data-gallery="gallery"><img src="visuals/topgolf.png" class="img-fluid" style="width:30.0%"></a>
+
+<a href="visuals/african-languages.png" class="lightbox" data-gallery="gallery"><img src="visuals/african-languages.png" class="img-fluid" style="width:35.0%"></a>
+<a href="visuals/seinfeld-sentiment.png" class="lightbox" data-gallery="gallery"><img src="visuals/seinfeld-sentiment.png" class="img-fluid" style="width:60.0%"></a></p>
+</div>
+</div>
+<!-- <small class="text-muted"></small> -->
 </div>
 </div>

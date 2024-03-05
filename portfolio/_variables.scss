@@ -294,38 +294,7 @@ th {
 
 nav a.nav-link:hover {
   border-bottom: 2px solid #333;
-  /* You can customize the color and thickness */
 }
-
-// .card {
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: space-evenly;
-//   margin: 10px;
-//   padding: 10px;
-//   border: 1px solid #ddd;
-//   border-radius: 5px;
-//   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-//   width: calc(33% - 40px);
-//   min-width: 300px;
-// }
-
-// .card-header h3 {
-//   margin: 0px;
-//   font-size: 1.5rem;
-//   flex: 1;
-// }
-
-// .card-header {
-//   background-color: white;
-//   display: flex;
-//   //align-items: center;
-// }
-
-// .card-body p {
-//   margin: 0;
-//   font-size: 1.1rem;
-// }
 
 .card {
   --bs-card-spacer-y: 1rem;
@@ -424,11 +393,7 @@ h4.card-title.center {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
-// .g-col-5 {
-//   display:flex;
-//   align-items: center;
-//   text-align: center;
-// }
+
 .button {
   text-align: center;
 }
