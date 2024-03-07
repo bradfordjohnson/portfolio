@@ -19,67 +19,50 @@ toc: false
 ---
 <div class="column-screen-inset">
 <div id="hero-heading">
-<div class=hero>
+<div class="hero">
 <h1>Hi, I'm Ford. My specialty lies in data analysis and crafting compelling visualizations.</h1>
 </div>
 </div>
 <br>
 <br>
 
-
-<div class="grid">
-<div class=g-col-1>
-</div>
-<div class=g-col-4>
-<div class=hero-2>
-<h1>Data Analytics</h1>
+<div class="card-container">
+<div class="card">
+<h2>Data Analytics</h2>
 <p>I specialize in crafting custom visuals and dashboards that not only enhance data comprehension but also empower data-driven decision-making. By seamlessly integrating creativity with analytical precision, I offer a comprehensive data narrative tailored to your specific business objectives.</p>
 </div>
-<!-- <small class="text-muted"></small> -->
-</div>
-<div class=g-col-1>
-</div>
-<div class=g-col-4>
-<div class=hero-2>
-<h1>Data Storytelling</h1>
+<div class="card">
+<h2>Data Storytelling</h2>
 <p>Every data narrative is uniquely tailored to your business's needs. Through close collaboration, I ensure that the visualizations I create not only meet your objectives but also engage your audience. With a personalized approach, I deliver data insights in a clear, compelling, and professional manner.</p>
 </div>
 </div>
-</div>
-<div class="grid">
-<div class=g-col-1>
-</div>
-<div class=g-col-4>
-<div class=hero-2>
-<h1>Data Warehousing & Pipelines</h1>
+
+<div class="card-container">
+<div class="card">
+<h2>Data Warehousing &amp; Pipelines</h2>
 <p>I specialize in exploring data intricacies and providing tailored analysis services. From uncovering hidden insights to identifying trends, my goal is to empower data-driven decision-making by equipping you with the necessary insights and tools to navigate your data effectively.</p>
 </div>
-</div>
-<div class=g-col-1>
-</div>
-<div class=g-col-4>
-<div class=hero-2>
-<h1>Ad Hoc Analysis</h1>
+<div class="card">
+<h2>Ad Hoc Analysis</h2>
 <p>Specializing in the exploration of data intricacies, I provide tailored analysis services. From uncovering hidden insights to recognizing trends, my focus is on empowering data-driven decision-making. My aim is to equip you with the necessary insights and tools for navigating your data landscape effectively.</p>
 </div>
-<!-- <small class="text-muted"></small> -->
 </div>
-</div>
-<div class="grid">
-<div class=g-col-1>
-</div>
-<div class=g-col-10>
-<div class=hero-2c>
-<br>
-<h1>Gallery</h1>
-<div class="gallery">
-<p><a href="visuals/owid-energy.png" class="lightbox" data-gallery="gallery"><img src="visuals/owid-energy.png" class="img-fluid" style="width:65.0%"></a>
-<a href="visuals/topgolf.png" class="lightbox" data-gallery="gallery"><img src="visuals/topgolf.png" class="img-fluid" style="width:30.0%"></a>
 
-<a href="visuals/african-languages.png" class="lightbox" data-gallery="gallery"><img src="visuals/african-languages.png" class="img-fluid" style="width:35.0%"></a>
-<a href="visuals/seinfeld-sentiment.png" class="lightbox" data-gallery="gallery"><img src="visuals/seinfeld-sentiment.png" class="img-fluid" style="width:60.0%"></a></p>
+<div class="gallery-header">
+<h2>Gallery</h2>
+</div>
+<div class="gallery">
+<div class="image-container">
+
+![](visuals/owid-energy.png){.lightbox group="my-gallery" class="img-fluid"}
+
+![](visuals/topgolf.png){.lightbox group="my-gallery" class="img-fluid"}
+
+![](visuals/african-languages.png){.lightbox group="my-gallery" class="img-fluid"}
+
+![](visuals/seinfeld-sentiment.png){.lightbox group="my-gallery" class="img-fluid"}
+
 </div>
 </div>
-<!-- <small class="text-muted"></small> -->
 </div>
 </div>
