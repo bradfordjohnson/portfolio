@@ -1,33 +1,37 @@
 project:
   type: website
-  resources:
-    - robots.txt
+  # resources:
+    # - hello-framework/dist/
   output-dir: docs
 
 website:
-  title: "Bradford Johnson"
+  title: "Ford Johnson"
   site-url: 'https://ford-johnson.com/'
-  
   google-analytics: "G-1BB9B4C1GN"
-  
-  favicon: "visuals/favicon.png"
+  favicon: "/assets/favicon.png"
   navbar:
-    background: light
-    title: false
-    left:
-      - href: index.qmd
-        text: Home
-      #- projects/index.qmd
-    right:
-      - icon: linkedin
-        href: https://linkedin.com/in/bradford-ford-johnson
-      - icon: github
-        href: https://github.com/bradfordjohnson
-  page-footer:
-    left: "Created by [Bradford Johnson](https://github.com/bradfordjohnson) © 2024"
+    background: dark
+    pinned: true
+    left: 
+      - text: Home
+        href: index.qmd
 
+      - text: Gallery
+        href: gallery/index.qmd
+
+      # - text: Projects 
+      #   href: projects/index.qmd
+
+      - text: Notes
+        href: notes/index.qmd
+    right:
+      - icon: github
+        href: https://github.com/bradfordjohnson/portfolio
 format:
   html:
-    theme: ["_variables.scss", default]
-    toc: true
+    theme: [cosmo.scss]
+    css: styles.css
     link-external-newwindow: true
+
+
+

@@ -1,16 +1,51 @@
 [
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "projects/project-repo/placeholder/index.html",
+    "href": "projects/project-repo/placeholder/index.html",
+    "title": "Placeholder Post",
     "section": "",
-    "text": "Projects Page"
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "notes/notebooks/python-libraries/index.html",
+    "href": "notes/notebooks/python-libraries/index.html",
+    "title": "Python Libraries",
+    "section": "",
+    "text": "difPy is a Python library that can be used to find duplicate images, or similar images based on their tensors (image content). You can also use this to keep sort out duplicate images based on resolution and manage your images in a programmatic way.\nimport difPy\nfrom multiprocessing import freeze_support\n\nimage_directory = 'path/to/images'\n\nif __name__ == '__main__':\n    freeze_support()\n    dif = difPy.build(image_directory)\n    search = difPy.search(dif)\n    print(search.result)"
+  },
+  {
+    "objectID": "notes/notebooks/python-libraries/index.html#difpy",
+    "href": "notes/notebooks/python-libraries/index.html#difpy",
+    "title": "Python Libraries",
+    "section": "",
+    "text": "difPy is a Python library that can be used to find duplicate images, or similar images based on their tensors (image content). You can also use this to keep sort out duplicate images based on resolution and manage your images in a programmatic way.\nimport difPy\nfrom multiprocessing import freeze_support\n\nimage_directory = 'path/to/images'\n\nif __name__ == '__main__':\n    freeze_support()\n    dif = difPy.build(image_directory)\n    search = difPy.search(dif)\n    print(search.result)"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Bradford Johnson",
     "section": "",
-    "text": "LinkedIn\n  \n  \n    \n     Github\n  \n\n  \n  \n\n\nHi, I’m Ford. My specialty lies in data analysis and crafting compelling visualizations.\n\n\n\n\n\n \n\n\n\nData Analytics\n\n\nI specialize in crafting custom visuals and dashboards that not only enhance data comprehension but also empower data-driven decision-making. By seamlessly integrating creativity with analytical precision, I offer a comprehensive data narrative tailored to your specific business objectives.\n\n\n\n\nData Storytelling\n\n\nEvery data narrative is uniquely tailored to your business’s needs. Through close collaboration, I ensure that the visualizations I create not only meet your objectives but also engage your audience. With a personalized approach, I deliver data insights in a clear, compelling, and professional manner.\n\n\n\n\n\n\nData Warehousing & Pipelines\n\n\nI specialize in exploring data intricacies and providing tailored analysis services. From uncovering hidden insights to identifying trends, my goal is to empower data-driven decision-making by equipping you with the necessary insights and tools to navigate your data effectively.\n\n\n\n\nAd Hoc Analysis\n\n\nSpecializing in the exploration of data intricacies, I provide tailored analysis services. From uncovering hidden insights to recognizing trends, my focus is on empowering data-driven decision-making. My aim is to equip you with the necessary insights and tools for navigating your data landscape effectively.\n\n\n\n\n\nGallery"
+    "text": "Hey there, I’m Ford, a data analyst and storyteller with experience navigating the intersection of web analytics and big data. I’m skilled at untangling complex datasets to find useful insights and telling engaging stories with the data.\nBeyond the digital realm, you’ll often find me exploring the great outdoors, capturing moments through the lens of my camera, or embarking on hiking adventures.\nFeel free to explore my work on this site, where I share insights, projects, and a glimpse into my data journey."
+  },
+  {
+    "objectID": "gallery/index.html",
+    "href": "gallery/index.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "This page showcases visualizations I’ve crafted over the years. Some of these visuals are part of broader analysis projects or demonstrations of specific techniques."
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nPython Libraries\n\n\nSome interesting / useful Python libraries that I have come across.\n\n\npython, libraries, interesting\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Placeholder Post\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 30, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
   }
 ]

@@ -1,0 +1,27 @@
+---
+title: "Python Libraries"
+description: "Some interesting / useful Python libraries that I have come across."
+author: "Ford Johnson"
+date: "3/31/2024"
+categories:
+  - python
+  - libraries
+  - interesting
+toc: true
+---
+
+## [difPy](https://github.com/elisemercury/Duplicate-Image-Finder)
+  difPy is a Python library that can be used to find duplicate images, or similar images based on their tensors (image content). You can also use this to keep sort out duplicate images based on resolution and manage your images in a programmatic way.
+
+```python
+import difPy
+from multiprocessing import freeze_support
+
+image_directory = 'path/to/images'
+
+if __name__ == '__main__':
+    freeze_support()
+    dif = difPy.build(image_directory)
+    search = difPy.search(dif)
+    print(search.result)
+  ```
