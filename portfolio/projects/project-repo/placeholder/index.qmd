@@ -1,0 +1,8 @@
+---
+title: "Placeholder Post"
+author: "Harlow Malloc"
+date: "2024-03-30"
+categories: [news, code, analysis]
+---
+
+This is a post with executable code.

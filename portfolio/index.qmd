@@ -2,11 +2,11 @@
 title: "Bradford Johnson"
 subtitle: "Data Analyst | Visualization Engineer"
 about:
-  id: hero-heading
-  template: trestles
-  image: visuals/profile.jpg
+  image: assets/profile.jpg
   image-width: 15em
   image-shape: rounded
+  # id: about
+  template: trestles
   links:
     - icon: linkedin
       text: LinkedIn
@@ -15,54 +15,16 @@ about:
       text: Github
       href: https://github.com/bradfordjohnson
 
-toc: false
 ---
-<div class="column-screen-inset">
-<div id="hero-heading">
-<div class="hero">
-<h1>Hi, I'm Ford. My specialty lies in data analysis and crafting compelling visualizations.</h1>
-</div>
-</div>
-<br>
-<br>
+<!-- <div class="column-screen-inset">
+<div class="about-entity">
+</div> -->
+<!-- # Hi, I’m Ford. -->
 
-<div class="card-container">
-<div class="card">
-<h2>Data Analytics</h2>
-<p>I specialize in crafting custom visuals and dashboards that not only enhance data comprehension but also empower data-driven decision-making. By seamlessly integrating creativity with analytical precision, I offer a comprehensive data narrative tailored to your specific business objectives.</p>
-</div>
-<div class="card">
-<h2>Data Storytelling</h2>
-<p>Every data narrative is uniquely tailored to your business's needs. Through close collaboration, I ensure that the visualizations I create not only meet your objectives but also engage your audience. With a personalized approach, I deliver data insights in a clear, compelling, and professional manner.</p>
-</div>
-</div>
+Hey there, I'm Ford, a data analyst and storyteller with experience navigating the intersection of web analytics and big data. I'm skilled at untangling complex datasets to find useful insights and telling engaging stories with the data.
 
-<div class="card-container">
-<div class="card">
-<h2>Data Warehousing &amp; Pipelines</h2>
-<p>I specialize in exploring data intricacies and providing tailored analysis services. From uncovering hidden insights to identifying trends, my goal is to empower data-driven decision-making by equipping you with the necessary insights and tools to navigate your data effectively.</p>
-</div>
-<div class="card">
-<h2>Ad Hoc Analysis</h2>
-<p>Specializing in the exploration of data intricacies, I provide tailored analysis services. From uncovering hidden insights to recognizing trends, my focus is on empowering data-driven decision-making. My aim is to equip you with the necessary insights and tools for navigating your data landscape effectively.</p>
-</div>
-</div>
+Beyond the digital realm, you'll often find me exploring the great outdoors, capturing moments through the lens of my camera, or embarking on hiking adventures.
 
-<div class="gallery-header">
-<h2>Gallery</h2>
-</div>
-<div class="gallery">
-<div class="image-container">
+Feel free to explore my work on this site, where I share insights, projects, and a glimpse into my data journey.
 
-![](visuals/owid-energy.png){.lightbox group="my-gallery" class="img-fluid"}
-
-![](visuals/topgolf.png){.lightbox group="my-gallery" class="img-fluid"}
-
-![](visuals/african-languages.png){.lightbox group="my-gallery" class="img-fluid"}
-
-![](visuals/seinfeld-sentiment.png){.lightbox group="my-gallery" class="img-fluid"}
-
-</div>
-</div>
-</div>
-</div>
+<!-- </div> -->

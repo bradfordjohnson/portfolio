@@ -1,0 +1,39 @@
+---
+title: "Gallery"
+page-layout: full
+title-block-banner: false
+---
+
+This page showcases visualizations I've crafted over the years. Some of these visuals are part of broader analysis projects or demonstrations of specific techniques.
+
+::: {layout-ncol="2"}
+![](images/fair-use.png){.lightbox width="100%"}
+
+![](images/ufo.png){.lightbox width="100%"}
+:::
+
+::: {layout-ncol="2"}
+![](images/owid_energy.png){.lightbox width="100%"}
+
+![](images/seinfeld-sentiment.png){.lightbox width="100%"}
+:::
+
+::: {layout-ncol="3"}
+![](images/programming.png){.lightbox width="100%"}
+
+![](images/soccer.png){.lightbox width="100%"}
+
+![](images/african-languages.png){.lightbox width="100%"}
+:::
+
+::: {layout-ncol="2"}
+![](images/goals-foot.png){.lightbox width="100%"}
+
+![](images/us-states.png){.lightbox width="100%"}
+:::
+
+::: {layout-ncol="2"}
+![](images/topgolf.png){.lightbox width="95%"}
+
+![](images/portal_project.png){.lightbox width="100%"}
+:::

@@ -1,0 +1,19 @@
+---
+title: "Notebooks"
+listing:
+  id: notebooks-listing
+  contents: notebooks
+  fields: [title, description, categories]
+  sort: "date desc"
+  type: table
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
+---
+
+Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.
+
+:::{#notebooks-listing}
+:::

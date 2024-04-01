@@ -1,8 +1,13 @@
 ---
 title: "Projects"
-format:
-  html:
-    page-layout: full
+listing:
+  contents: project-repo
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+page-layout: full
+title-block-banner: false
 ---
 
-Projects Page
