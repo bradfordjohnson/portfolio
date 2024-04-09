@@ -11,21 +11,21 @@
     "href": "notes/notebooks/python-libraries/index.html",
     "title": "Python Libraries",
     "section": "",
-    "text": "difPy is a Python library that can be used to find duplicate images, or similar images based on their tensors (image content). You can also use this to keep sort out duplicate images based on resolution and manage your images in a programmatic way.\nimport difPy\nfrom multiprocessing import freeze_support\n\nimage_directory = 'path/to/images'\n\nif __name__ == '__main__':\n    freeze_support()\n    dif = difPy.build(image_directory)\n    search = difPy.search(dif)\n    print(search.result)"
+    "text": "difPy is a Python library that can be used to find duplicate images, or similar images based on their tensors (image content). You can also use this to sort out duplicate images based on resolution and manage your images in a programmatic way.\nimport difPy\nfrom multiprocessing import freeze_support\n\nimage_directory = 'path/to/images'\n\nif __name__ == '__main__':\n    freeze_support()\n    dif = difPy.build(image_directory)\n    search = difPy.search(dif)\n    print(search.result)"
   },
   {
     "objectID": "notes/notebooks/python-libraries/index.html#difpy",
     "href": "notes/notebooks/python-libraries/index.html#difpy",
     "title": "Python Libraries",
     "section": "",
-    "text": "difPy is a Python library that can be used to find duplicate images, or similar images based on their tensors (image content). You can also use this to keep sort out duplicate images based on resolution and manage your images in a programmatic way.\nimport difPy\nfrom multiprocessing import freeze_support\n\nimage_directory = 'path/to/images'\n\nif __name__ == '__main__':\n    freeze_support()\n    dif = difPy.build(image_directory)\n    search = difPy.search(dif)\n    print(search.result)"
+    "text": "difPy is a Python library that can be used to find duplicate images, or similar images based on their tensors (image content). You can also use this to sort out duplicate images based on resolution and manage your images in a programmatic way.\nimport difPy\nfrom multiprocessing import freeze_support\n\nimage_directory = 'path/to/images'\n\nif __name__ == '__main__':\n    freeze_support()\n    dif = difPy.build(image_directory)\n    search = difPy.search(dif)\n    print(search.result)"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bradford Johnson",
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notebooks",
     "section": "",
-    "text": "Hey there, I’m Ford, a data analyst and storyteller with experience navigating the intersection of web analytics and big data. I’m skilled at untangling complex datasets to find useful insights and telling engaging stories with the data.\nBeyond the digital realm, you’ll often find me exploring the great outdoors, capturing moments through the lens of my camera, or embarking on hiking adventures.\nFeel free to explore my work on this site, where I share insights, projects, and a glimpse into my data journey."
+    "text": "Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nObservable Plot\n\n\nExploring Observable Plot\n\n\njavascript, libraries, visualization\n\n\n\n\nPython Libraries\n\n\nSome interesting / useful Python libraries that I have come across.\n\n\npython, libraries, interesting\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "gallery/index.html",
@@ -35,11 +35,25 @@
     "text": "This page showcases visualizations I’ve crafted over the years. Some of these visuals are part of broader analysis projects or demonstrations of specific techniques."
   },
   {
-    "objectID": "notes/index.html",
-    "href": "notes/index.html",
-    "title": "Notebooks",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bradford Johnson",
     "section": "",
-    "text": "Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nPython Libraries\n\n\nSome interesting / useful Python libraries that I have come across.\n\n\npython, libraries, interesting\n\n\n\n\n\nNo matching items"
+    "text": "Hey there, I’m Ford, a data analyst and storyteller with experience navigating the intersection of web analytics and big data. I’m skilled at untangling complex datasets to find useful insights and telling engaging stories with the data.\nBeyond the digital realm, you’ll often find me exploring the great outdoors, capturing moments through the lens of my camera, or embarking on hiking adventures.\nFeel free to explore my work on this site, where I share insights, projects, and a glimpse into my data journey."
+  },
+  {
+    "objectID": "notes/notebooks/observable-plot/index.html",
+    "href": "notes/notebooks/observable-plot/index.html",
+    "title": "Observable Plot",
+    "section": "",
+    "text": "Code\ndata = FileAttachment(\"trends.csv\").csv({ typed: true });\n\nviewof selectedQuery = Inputs.select(d3.group(data, d =&gt; d.query), {label:\"Query\"})\n\nPlot.plot({\n    marks: [\n        Plot.ruleY([0]),\n        Plot.lineY(selectedQuery, {\n            x: \"week\",\n            y: \"interest\",\n            curve: \"linear\",\n            stroke: \"query\",\n        }),\n        Plot.crosshair(data, {\n            x: \"week\",\n            y: \"interest\"\n        })\n    ]\n});"
+  },
+  {
+    "objectID": "notes/notebooks/observable-plot/index.html#google-search-trends---usa",
+    "href": "notes/notebooks/observable-plot/index.html#google-search-trends---usa",
+    "title": "Observable Plot",
+    "section": "",
+    "text": "Code\ndata = FileAttachment(\"trends.csv\").csv({ typed: true });\n\nviewof selectedQuery = Inputs.select(d3.group(data, d =&gt; d.query), {label:\"Query\"})\n\nPlot.plot({\n    marks: [\n        Plot.ruleY([0]),\n        Plot.lineY(selectedQuery, {\n            x: \"week\",\n            y: \"interest\",\n            curve: \"linear\",\n            stroke: \"query\",\n        }),\n        Plot.crosshair(data, {\n            x: \"week\",\n            y: \"interest\"\n        })\n    ]\n});"
   },
   {
     "objectID": "projects/index.html",

@@ -1,0 +1,36 @@
+---
+title: "Observable Plot"
+description: "Exploring Observable Plot"
+author: "Ford Johnson"
+date: "4/8/2024"
+categories:
+  - javascript
+  - libraries
+  - visualization
+toc: true
+code-fold: true
+---
+
+## 🔍 Google Search Trends - USA
+
+```{ojs}
+data = FileAttachment("trends.csv").csv({ typed: true });
+
+viewof selectedQuery = Inputs.select(d3.group(data, d => d.query), {label:"Query"})
+
+Plot.plot({
+    marks: [
+        Plot.ruleY([0]),
+        Plot.lineY(selectedQuery, {
+            x: "week",
+            y: "interest",
+            curve: "linear",
+            stroke: "query",
+        }),
+        Plot.crosshair(data, {
+            x: "week",
+            y: "interest"
+        })
+    ]
+});
+```
