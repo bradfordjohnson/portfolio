@@ -8,6 +8,7 @@ website:
   title: "Ford Johnson"
   site-url: 'https://ford-johnson.com/'
   google-analytics: "G-1BB9B4C1GN"
+  cookie-consent: true
   favicon: "/assets/favicon.png"
   navbar:
     background: dark
@@ -27,6 +28,13 @@ website:
     right:
       - icon: github
         href: https://github.com/bradfordjohnson/portfolio
+  page-footer: 
+    left: |
+      <br>
+      Copyright &copy; 2024 Bradford Johnson<br>
+      Built with 
+      [![](/assets/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org)
+      
 format:
   html:
     theme: [cosmo.scss]
