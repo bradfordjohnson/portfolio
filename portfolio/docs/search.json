@@ -68,5 +68,12 @@
     "title": "Projects",
     "section": "",
     "text": "Discover a collection of impactful data analysis projects showcasing my expertise and creativity in action.\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nJan 1, 2023\n\n\nTidyTuesday\n\n\n\n\n\ntidytuesday, r, visualization\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes/notebooks/python-libraries/index.html#pyyaml",
+    "href": "notes/notebooks/python-libraries/index.html#pyyaml",
+    "title": "Python Libraries",
+    "section": "PyYAML",
+    "text": "PyYAML\nPyYAML can be used to process and parse YAML files with Python.\nimport yaml\n\nwith open(\"file.yml\", 'r') as stream:\n    try:\n        config = yaml.safe_load(stream)\n        print(config)\n    except yaml.YAMLError as exc:\n        print(exc)"
   }
 ]

@@ -194,6 +194,7 @@ cookieconsent.run({
    
   <ul>
   <li><a href="#difpy" id="toc-difpy" class="nav-link active" data-scroll-target="#difpy">difPy</a></li>
+  <li><a href="#pyyaml" id="toc-pyyaml" class="nav-link" data-scroll-target="#pyyaml">PyYAML</a></li>
   </ul>
 </nav>
     </div>
@@ -254,6 +255,18 @@ cookieconsent.run({
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    dif <span class="op">=</span> difPy.build(image_directory)</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    search <span class="op">=</span> difPy.search(dif)</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(search.result)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="pyyaml" class="level2">
+<h2 class="anchored" data-anchor-id="pyyaml"><a href="https://github.com/yaml/pyyaml?tab=readme-ov-file#pyyaml">PyYAML</a></h2>
+<p>PyYAML can be used to process and parse YAML files with Python.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> yaml</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">"file.yml"</span>, <span class="st">'r'</span>) <span class="im">as</span> stream:</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">try</span>:</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>        config <span class="op">=</span> yaml.safe_load(stream)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(config)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">except</span> yaml.YAMLError <span class="im">as</span> exc:</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(exc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
 </section>

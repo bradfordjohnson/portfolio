@@ -24,4 +24,18 @@ if __name__ == '__main__':
     dif = difPy.build(image_directory)
     search = difPy.search(dif)
     print(search.result)
-  ```
+```
+
+## [PyYAML](https://github.com/yaml/pyyaml?tab=readme-ov-file#pyyaml)
+PyYAML can be used to process and parse YAML files with Python.
+
+```python
+import yaml
+
+with open("file.yml", 'r') as stream:
+    try:
+        config = yaml.safe_load(stream)
+        print(config)
+    except yaml.YAMLError as exc:
+        print(exc)
+```
