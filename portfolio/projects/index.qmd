@@ -3,7 +3,8 @@ title: "Projects"
 listing:
   contents: project-repo
   sort: "date desc"
-  type: default
+  fields: [date, title, description, categories]
+  type: table
   categories: true
   sort-ui: false
   filter-ui: false
@@ -11,3 +12,4 @@ page-layout: full
 title-block-banner: false
 ---
 
+Discover a collection of impactful data analysis projects showcasing my expertise and creativity in action.

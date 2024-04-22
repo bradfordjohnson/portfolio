@@ -1,0 +1,135 @@
+---
+title: "TidyTuesday"
+author: "Ford Johnson"
+date: "2023-01-01"
+categories: [tidytuesday, r, visualization]
+
+format:
+  html:
+    anchor-sections: false
+    other-links:
+      - text: View on GitHub
+        icon: github
+        href: https://github.com/bradfordjohnson/tidytuesday
+---
+
+## About
+
+TidyTuesday is a weekly community project that creates a space for data enthusiasts to share and learn.
+
+The focus is using R and the tidyverse package to clean, wrangle, and visualize data. Each week a new dataset is released and participants are encouraged to explore and visualize the data in creative ways.
+
+I try to participate in TidyTuesday as often as I can - as it's a great way to grow my skills and learn from others.
+
+This page is a collection of my favortie TidyTuesday contributions.
+
+
+### 2023-08-29 | Fair Use
+::: {.panel-tabset}
+## Visual
+
+![](assets/fair_use.png)
+
+:::
+
+
+### 2023-08-01 | US States
+::: {.panel-tabset}
+## Visual
+
+![](assets/us_states.png)
+
+:::
+
+
+### 2023-06-20 | UFO Sightings Redux data
+::: {.panel-tabset}
+## Visual
+
+![](assets/ufo.png)
+
+:::
+
+
+### 2023-06-06 | Energy Data
+::: {.panel-tabset}
+## Visual
+
+![](assets/owid_energy.png)
+
+:::
+
+
+### 2023-05-02 | The Portal Project data
+::: {.panel-tabset}
+## Visual
+
+![](assets/portal_project.png)
+
+:::
+
+
+### 2023-04-26 | London Marathon
+::: {.panel-tabset}
+## Visual
+
+![](assets/london_marathon.png)
+
+## Gif
+
+![](assets/london_marathon.gif)
+
+:::
+
+
+### 2023-04-11 | Cage-Free Egg Production
+::: {.panel-tabset}
+## Visual
+
+![](assets/eggs.png)
+
+## Gif
+
+![](assets/eggs.gif)
+
+:::
+
+
+### 2023-04-04 | Premier League Match data
+::: {.panel-tabset}
+## Visual
+
+![](assets/soccer.png)
+
+:::
+
+
+### 2023-03-07 | Numbats in Australia
+::: {.panel-tabset}
+## Visual
+
+![](assets/numbats.png)
+
+## Gif
+
+![](assets/numbats.gif)
+
+:::
+
+
+### 2023-03-21 | Programming Languages data
+::: {.panel-tabset}
+## Visual
+
+![](assets/programming.png)
+
+:::
+
+
+### 2023-02-28 | African language sentiment data
+::: {.panel-tabset}
+## Visual
+
+![](assets/african_languages.png)
+
+:::

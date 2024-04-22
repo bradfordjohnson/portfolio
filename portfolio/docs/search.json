@@ -1,10 +1,17 @@
 [
   {
-    "objectID": "projects/project-repo/placeholder/index.html",
-    "href": "projects/project-repo/placeholder/index.html",
-    "title": "Placeholder Post",
+    "objectID": "projects/project-repo/tidytuesday/index.html",
+    "href": "projects/project-repo/tidytuesday/index.html",
+    "title": "TidyTuesday",
     "section": "",
-    "text": "This is a post with executable code."
+    "text": "TidyTuesday is a weekly community project that creates a space for data enthusiasts to share and learn.\nThe focus is using R and the tidyverse package to clean, wrangle, and visualize data. Each week a new dataset is released and participants are encouraged to explore and visualize the data in creative ways.\nI try to participate in TidyTuesday as often as I can - as it’s a great way to grow my skills and learn from others.\nThis page is a collection of my favortie TidyTuesday contributions.\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual"
+  },
+  {
+    "objectID": "projects/project-repo/tidytuesday/index.html#about",
+    "href": "projects/project-repo/tidytuesday/index.html#about",
+    "title": "TidyTuesday",
+    "section": "",
+    "text": "TidyTuesday is a weekly community project that creates a space for data enthusiasts to share and learn.\nThe focus is using R and the tidyverse package to clean, wrangle, and visualize data. Each week a new dataset is released and participants are encouraged to explore and visualize the data in creative ways.\nI try to participate in TidyTuesday as often as I can - as it’s a great way to grow my skills and learn from others.\nThis page is a collection of my favortie TidyTuesday contributions.\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual"
   },
   {
     "objectID": "notes/notebooks/python-libraries/index.html",
@@ -60,6 +67,6 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "Placeholder Post\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\nMar 30, 2024\n\n\nHarlow Malloc\n\n\n\n\n\n\nNo matching items"
+    "text": "Discover a collection of impactful data analysis projects showcasing my expertise and creativity in action.\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nJan 1, 2023\n\n\nTidyTuesday\n\n\n\n\n\ntidytuesday, r, visualization\n\n\n\n\n\nNo matching items"
   }
 ]

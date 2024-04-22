@@ -1,7 +1,5 @@
 project:
   type: website
-  # resources:
-    # - hello-framework/dist/
   output-dir: docs
 
 website:
@@ -20,8 +18,8 @@ website:
       - text: Gallery
         href: gallery/index.qmd
 
-      # - text: Projects 
-      #   href: projects/index.qmd
+      - text: Projects 
+        href: projects/index.qmd
 
       - text: Notes
         href: notes/index.qmd
