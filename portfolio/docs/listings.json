@@ -2,6 +2,7 @@
   {
     "listing": "/notes/index.html",
     "items": [
+      "/notes/notebooks/D3/index.html",
       "/notes/notebooks/observable-plot/index.html",
       "/notes/notebooks/python-libraries/index.html"
     ]
