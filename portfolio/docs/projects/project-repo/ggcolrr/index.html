@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Ford Johnson">
+<meta name="dcterms.date" content="2024-05-27">
+<meta name="description" content="Exploring R package development to enhance ggplot2 with better code and visual theme management.">
 
-<title>Ford Johnson - Projects</title>
+<title>Ford Johnson - Creating my own R package: ggcolrr</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,26 +26,23 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="..//assets/favicon.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/cookie-consent/cookie-consent.js"></script>
-<link href="../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<link href="../../..//assets/favicon.png" rel="icon" type="image/png">
+<script src="../../../site_libs/cookie-consent/cookie-consent.js"></script>
+<link href="../../../site_libs/cookie-consent/cookie-consent.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,35 +70,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-date','listing-title','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-title-sort'] }],
-      
-      searchColumns: ["listing-date","listing-title","listing-author"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-1BB9B4C1GN"></script>
 
 <script type="text/plain" cookie-consent="tracking">
@@ -127,37 +98,8 @@ cookieconsent.run({
 </script> 
   
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed">
@@ -167,7 +109,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Ford Johnson</span>
     </a>
   </div>
@@ -178,19 +120,19 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../gallery/index.html"> 
+    <a class="nav-link" href="../../../gallery/index.html"> 
 <span class="menu-text">Gallery</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../notes/index.html"> 
+    <a class="nav-link" href="../../../notes/index.html"> 
 <span class="menu-text">Notes</span></a>
   </li>  
 </ul>
@@ -208,25 +150,47 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(2)</span></div><div class="category" data-category="packages">packages <span class="quarto-category-count">(1)</span></div><div class="category" data-category="r">r <span class="quarto-category-count">(2)</span></div><div class="category" data-category="tidytuesday">tidytuesday <span class="quarto-category-count">(1)</span></div><div class="category" data-category="visualization">visualization <span class="quarto-category-count">(2)</span></div></div></div>
+    <div class="quarto-other-links"><h2>Other Links</h2><ul><li><a href="https://github.com/bradfordjohnson/ggcolrr"><i class="bi bi-github"></i>View on GitHub</a></li></ul></div></div>
 <!-- main -->
-<main class="content column-page-left" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Projects</h1>
+<h1 class="title">Creating my own R package: ggcolrr</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">packages</div>
+    <div class="quarto-category">r</div>
+    <div class="quarto-category">visualization</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Exploring R package development to enhance ggplot2 with better code and visual theme management.
+  </div>
 </div>
 
 
+<div class="quarto-title-meta">
 
-<div class="quarto-title-meta column-page-left">
-
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Ford Johnson </p>
+          </div>
+  </div>
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 27, 2024</p>
+    </div>
+  </div>
   
     
   </div>
@@ -236,64 +200,31 @@ window.Quarto = {
 </header>
 
 
-<p>Discover a collection of impactful data analysis projects showcasing my expertise and creativity in action.</p>
+<section id="identifying-the-challenge" class="level3">
+<h3 data-anchor-id="identifying-the-challenge">Identifying the challenge</h3>
+<p>Ensuring my R code stays tidy and organized while trying to add my personal touch to ggplot2 visuals can be quite the balancing act. I often notice that my plots share a lot of the same code, with just little tweaks here and there for things like color palettes or themes. So, I end up doing a lot of copy and paste to keep that consistent look and feel across all my scripts.</p>
+<section id="considered-approaches" class="level4">
+<h4 data-anchor-id="considered-approaches">Considered approaches</h4>
+<p>Exploring different ways to tackle this issue, I thought about manually handling color palettes and all that boilerplate code for ggplot2 plots. Another idea was to write custom functions to help me with those repetitive tasks, like adding watermarks or branding. I even looked into existing packages, but found they didn’t quite cover everything I needed or lacked the flexibility I wanted.</p>
+</section>
+</section>
+<section id="my-solution" class="level3">
+<h3 data-anchor-id="my-solution">My solution:</h3>
+<p>That’s when I decided to dive into developing my own solution: the <a href="https://github.com/bradfordjohnson/ggcolrr">ggcolrr</a> package. It’s my attempt at tackling these challenges head-on. With ggcolrr, I’ve built a bunch of tools and functions to help manage custom color palettes, effortlessly generate ggplot2 themes, and seamlessly add branding elements to plots. It’s like a one-stop-shop to make my R workflow smoother and my code cleaner.</p>
+<section id="key-takeaways" class="level4">
+<h4 data-anchor-id="key-takeaways">Key takeaways:</h4>
+<p>Throughout the journey of creating ggcolrr, I’ve learned a ton about how to structure R packages, write better documentation, and ensure my code is top-notch with thorough testing. Plus, I’ve really delved deep into ggplot2 and picked up some neat tricks for improving how I work and maintain my code. Using tests while developing ggcolrr has been a game-changer for me. It’s helped me catch bugs early on and make sure everything works as expected and is documented properly.</p>
+<p><a href="https://github.com/bradfordjohnson/ggcolrr/actions/workflows/R-CMD-check.yaml"><img src="https://github.com/bradfordjohnson/ggcolrr/actions/workflows/R-CMD-check.yaml/badge.svg" class="img-fluid"></a></p>
+</section>
+<section id="future-development" class="level4">
+<h4 data-anchor-id="future-development">Future development:</h4>
+<p>Looking ahead, I’m excited to keep refining and expanding ggcolrr. I want to hear from other users about what they need and keep tweaking things to make it even better. That means adding new features, fine-tuning what’s already there, making the documentation crystal clear, and ensuring ggcolrr plays nice with whatever updates come down the pipeline for R and ggplot2.</p>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-table" id="listing-listing">
-<table class="quarto-listing-table table">
-<thead>
-<tr>
-<th>
-Date
-</th>
-<th>
-Title
-</th>
-<th>
-Description
-</th>
-<th>
-Categories
-</th>
-</tr>
-</thead>
-<tbody class="list">
-<tr data-index="0" data-categories="packages,r,visualization" data-listing-date-sort="1716782400000" data-listing-file-modified-sort="1716861101721" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="341" data-listing-title-sort="Creating my own R package: ggcolrr" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">May 27, 2024</span>
-</td>
-<td>
-<a href="../projects/project-repo/ggcolrr/index.html" class="title listing-title">Creating my own R package: ggcolrr</a>
-</td>
-<td>
-<span class="listing-description">Exploring R package development to enhance ggplot2 with better code and visual theme management.</span>
-</td>
-<td>
-<span class="listing-categories">packages, r, visualization</span>
-</td>
-</tr>
-<tr data-index="1" data-categories="tidytuesday,r,visualization" data-listing-date-sort="1672549200000" data-listing-file-modified-sort="1713745971137" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="164" data-listing-title-sort="TidyTuesday" data-listing-filename-sort="index.qmd">
-<td>
-<span class="listing-date">Jan 1, 2023</span>
-</td>
-<td>
-<a href="../projects/project-repo/tidytuesday/index.html" class="title listing-title">TidyTuesday</a>
-</td>
-<td>
-<span class="listing-description">TidyTuesday is a weekly community project that creates a space for data enthusiasts to share and learn.</span>
-</td>
-<td>
-<span class="listing-categories">tidytuesday, r, visualization</span>
-</td>
-</tr>
-</tbody>
-</table>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -314,13 +245,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -703,7 +627,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
-<p><br> Copyright © 2024 Bradford Johnson<br> Built with <a href="https://quarto.org"><img src="..\assets/quarto.png" class="img-fluid" alt="Quarto" width="65"></a></p>
+<p><br> Copyright © 2024 Bradford Johnson<br> Built with <a href="https://quarto.org"><img src="../../..\assets/quarto.png" class="img-fluid" alt="Quarto" width="65"></a></p>
 </div>   
     <div class="nav-footer-center">
 

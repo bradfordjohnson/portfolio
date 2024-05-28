@@ -1,0 +1,38 @@
+---
+title: "Creating my own R package: ggcolrr"
+author: "Ford Johnson"
+date: "2024-05-27"
+categories: [packages, r, visualization]
+description: "Exploring R package development to enhance ggplot2 with better code and visual theme management."
+
+format:
+  html:
+    anchor-sections: false
+    other-links:
+      - text: View on GitHub
+        icon: github
+        href: https://github.com/bradfordjohnson/ggcolrr
+---
+
+### Identifying the challenge
+
+Ensuring my R code stays tidy and organized while trying to add my personal touch to ggplot2 visuals can be quite the balancing act. I often notice that my plots share a lot of the same code, with just little tweaks here and there for things like color palettes or themes. So, I end up doing a lot of copy and paste to keep that consistent look and feel across all my scripts.
+
+#### Considered approaches
+
+Exploring different ways to tackle this issue, I thought about manually handling color palettes and all that boilerplate code for ggplot2 plots. Another idea was to write custom functions to help me with those repetitive tasks, like adding watermarks or branding. I even looked into existing packages, but found they didn't quite cover everything I needed or lacked the flexibility I wanted.
+
+### My solution:
+
+That's when I decided to dive into developing my own solution: the [ggcolrr](https://github.com/bradfordjohnson/ggcolrr) package. It's my attempt at tackling these challenges head-on. With ggcolrr, I've built a bunch of tools and functions to help manage custom color palettes, effortlessly generate ggplot2 themes, and seamlessly add branding elements to plots. It's like a one-stop-shop to make my R workflow smoother and my code cleaner.
+
+
+#### Key takeaways:
+
+Throughout the journey of creating ggcolrr, I've learned a ton about how to structure R packages, write better documentation, and ensure my code is top-notch with thorough testing. Plus, I've really delved deep into ggplot2 and picked up some neat tricks for improving how I work and maintain my code. Using tests while developing ggcolrr has been a game-changer for me. It's helped me catch bugs early on and make sure everything works as expected and is documented properly.
+
+[![](https://github.com/bradfordjohnson/ggcolrr/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/bradfordjohnson/ggcolrr/actions/workflows/R-CMD-check.yaml)
+
+#### Future development:
+
+Looking ahead, I'm excited to keep refining and expanding ggcolrr. I want to hear from other users about what they need and keep tweaking things to make it even better. That means adding new features, fine-tuning what's already there, making the documentation crystal clear, and ensuring ggcolrr plays nice with whatever updates come down the pipeline for R and ggplot2.
