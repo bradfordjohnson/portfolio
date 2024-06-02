@@ -105,6 +105,13 @@
     "text": "ggplot2 Extensions\nSee extension site for more."
   },
   {
+    "objectID": "notes/notebooks/r-packages/index.html#visualization",
+    "href": "notes/notebooks/r-packages/index.html#visualization",
+    "title": "R Packages and Code",
+    "section": "Visualization",
+    "text": "Visualization\n\nmagick\nFor image processing in R.\nAppending images:\nlibrary(magick)\n\nimage_1 &lt;- image_read(\"image1.png\")\nimage_2 &lt;- image_read(\"image2.png\")\n\nappended_images &lt;- image_append(c(image_1, image_2), stack = TRUE)\n\nimage_write(appended_images, \"appended_images.png\")"
+  },
+  {
     "objectID": "projects/project-repo/ggcolrr/index.html",
     "href": "projects/project-repo/ggcolrr/index.html",
     "title": "Creating my own R package: ggcolrr",

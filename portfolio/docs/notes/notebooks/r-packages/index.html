@@ -199,6 +199,10 @@ cookieconsent.run({
   <li><a href="#here" id="toc-here" class="nav-link" data-scroll-target="#here"><code>here</code></a></li>
   </ul></li>
   <li><a href="#ggplot2-extensions" id="toc-ggplot2-extensions" class="nav-link" data-scroll-target="#ggplot2-extensions">ggplot2 Extensions</a></li>
+  <li><a href="#visualization" id="toc-visualization" class="nav-link" data-scroll-target="#visualization">Visualization</a>
+  <ul class="collapse">
+  <li><a href="#magick" id="toc-magick" class="nav-link" data-scroll-target="#magick"><code>magick</code></a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -299,8 +303,24 @@ cookieconsent.run({
 <section id="ggplot2-extensions" class="level2">
 <h2 class="anchored" data-anchor-id="ggplot2-extensions">ggplot2 Extensions</h2>
 <p>See <a href="https://exts.ggplot2.tidyverse.org/">extension site</a> for more.</p>
+</section>
+<section id="visualization" class="level2">
+<h2 class="anchored" data-anchor-id="visualization">Visualization</h2>
+<section id="magick" class="level3">
+<h3 class="anchored" data-anchor-id="magick"><code>magick</code></h3>
+<p>For image processing in R.</p>
+<p>Appending images:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magick)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>image_1 <span class="ot">&lt;-</span> <span class="fu">image_read</span>(<span class="st">"image1.png"</span>)</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>image_2 <span class="ot">&lt;-</span> <span class="fu">image_read</span>(<span class="st">"image2.png"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>appended_images <span class="ot">&lt;-</span> <span class="fu">image_append</span>(<span class="fu">c</span>(image_1, image_2), <span class="at">stack =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">image_write</span>(appended_images, <span class="st">"appended_images.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

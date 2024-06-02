@@ -66,3 +66,22 @@ path <- "/path/to/file/name.csv"
 ## ggplot2 Extensions
 
 See [extension site](https://exts.ggplot2.tidyverse.org/) for more.
+
+## Visualization
+
+### `magick`
+
+For image processing in R.
+
+Appending images:
+
+```r
+library(magick)
+
+image_1 <- image_read("image1.png")
+image_2 <- image_read("image2.png")
+
+appended_images <- image_append(c(image_1, image_2), stack = TRUE)
+
+image_write(appended_images, "appended_images.png")
+```
