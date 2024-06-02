@@ -21,48 +21,6 @@
     "text": "Discover a collection of impactful data analysis projects showcasing my expertise and creativity in action.\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nMay 27, 2024\n\n\nCreating my own R package: ggcolrr\n\n\nExploring R package development to enhance ggplot2 with better code and visual theme management.\n\n\npackages, r, visualization\n\n\n\n\nJan 1, 2023\n\n\nTidyTuesday\n\n\n\n\n\ntidytuesday, r, visualization\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "notes/notebooks/observable-plot/index.html",
-    "href": "notes/notebooks/observable-plot/index.html",
-    "title": "Observable Plot",
-    "section": "",
-    "text": "Code\ndata = FileAttachment(\"trends.csv\").csv({ typed: true });\n\nviewof selectedQuery = Inputs.select(d3.group(data, d =&gt; d.query), {label:\"Query\"})\n\nPlot.plot({\n    marks: [\n        Plot.ruleY([0]),\n        Plot.lineY(selectedQuery, {\n            x: \"week\",\n            y: \"interest\",\n            curve: \"linear\",\n            stroke: \"query\",\n        }),\n        Plot.crosshair(data, {\n            x: \"week\",\n            y: \"interest\"\n        })\n    ]\n});"
-  },
-  {
-    "objectID": "notes/notebooks/observable-plot/index.html#google-search-trends---usa",
-    "href": "notes/notebooks/observable-plot/index.html#google-search-trends---usa",
-    "title": "Observable Plot",
-    "section": "",
-    "text": "Code\ndata = FileAttachment(\"trends.csv\").csv({ typed: true });\n\nviewof selectedQuery = Inputs.select(d3.group(data, d =&gt; d.query), {label:\"Query\"})\n\nPlot.plot({\n    marks: [\n        Plot.ruleY([0]),\n        Plot.lineY(selectedQuery, {\n            x: \"week\",\n            y: \"interest\",\n            curve: \"linear\",\n            stroke: \"query\",\n        }),\n        Plot.crosshair(data, {\n            x: \"week\",\n            y: \"interest\"\n        })\n    ]\n});"
-  },
-  {
-    "objectID": "notes/index.html",
-    "href": "notes/index.html",
-    "title": "Notebooks",
-    "section": "",
-    "text": "Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nDon’t Deploy on Fridays…\n\n\nExploring GitHub commits from 2010-2021 using D3.js.\n\n\njavascript, D3, visualization\n\n\n\n\nObservable Plot\n\n\nExploring Observable Plot\n\n\njavascript, libraries, visualization\n\n\n\n\nPython Libraries\n\n\nSome interesting / useful Python libraries that I have come across.\n\n\npython, libraries, interesting\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "gallery/index.html",
-    "href": "gallery/index.html",
-    "title": "Gallery",
-    "section": "",
-    "text": "This page showcases visualizations I’ve crafted over the years. Some of these visuals are part of broader analysis projects or demonstrations of specific techniques."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Bradford Johnson",
-    "section": "",
-    "text": "Hey there, I’m Ford, a data analyst and storyteller with experience navigating the intersection of web analytics and big data. I’m skilled at untangling complex datasets to find useful insights and telling engaging stories with the data.\nBeyond the digital realm, you’ll often find me exploring the great outdoors, capturing moments through the lens of my camera, or embarking on hiking adventures.\nFeel free to explore my work on this site, where I share insights, projects, and a glimpse into my data journey."
-  },
-  {
-    "objectID": "notes/notebooks/D3/index.html",
-    "href": "notes/notebooks/D3/index.html",
-    "title": "Don’t Deploy on Fridays…",
-    "section": "",
-    "text": "In my latest exploration using D3, I visualized GitHub commit data from 2010-2021, focusing on commits mentioning the word “deploy” in the subject. The resulting chart revealed striking trends in the percent change of commits by day. Notably, Mondays exhibited the highest percentage change, shedding light on the cautionary maxim, “Don’t Deploy on Fridays.”\n\n\nCode\nd3 = require(\"d3@7\")\nimport {Legend} from \"@d3/color-legend\"\n\ncommits = FileAttachment(\"commits.csv\").csv({typed: true})\n\nkey = Legend(chart.scales.color, {title: \"Daily change\", tickFormat: \"+%\", marginLeft: 40})\n\nchart = {\n  const width = 928;\n  const cellSize = 17;\n  const height = cellSize * 7;\n\n\n  const formatValue = d3.format(\"+.2%\");\n  const formatClose = d3.format(\"$,.2f\");\n  const formatDate = d3.utcFormat(\"%x\");\n  const formatDay = i =&gt; \"SMTWTFS\"[i];\n  const formatMonth = d3.utcFormat(\"%b\");\n\n  const timeWeek = d3.utcMonday; \n  const countDay = i =&gt; (i + 6) % 7;\n\n  const data = d3.pairs(commits, ({commits: Previous}, {date, commits}) =&gt; ({\n    date: date,\n    value: (commits - Previous) / Previous,\n    commits: commits\n  }));\n\n  const max = d3.quantile(data, 0.9975, d =&gt; Math.abs(d.value));\n  const color = d3.scaleSequential(d3.interpolatePiYG).domain([-max, +max]);\n\n  const years = d3.groups(data, d =&gt; d.date.getUTCFullYear()).reverse();\n\n  function pathMonth(t) {\n    const d = Math.max(0, Math.min(5, countDay(t.getUTCDay())));\n    const w = timeWeek.count(d3.utcYear(t), t);\n    return `${d === 0 ? `M${w * cellSize},0`\n        : d === 5 ? `M${(w + 1) * cellSize},0`\n        : `M${(w + 1) * cellSize},0V${d * cellSize}H${w * cellSize}`}V${5 * cellSize}`;\n  }\n\n  const svg = d3.create(\"svg\")\n      .attr(\"width\", width)\n      .attr(\"height\", height * years.length)\n      .attr(\"viewBox\", [0, 0, width, height * years.length])\n      .attr(\"style\", \"max-width: 100%; height: auto; font: 10px sans-serif;\");\n\n  const year = svg.selectAll(\"g\")\n    .data(years)\n    .join(\"g\")\n      .attr(\"transform\", (d, i) =&gt; `translate(40.5,${height * i + cellSize * 1.5})`);\n\n  year.append(\"text\")\n      .attr(\"x\", -5)\n      .attr(\"y\", -5)\n      .attr(\"font-weight\", \"bold\")\n      .attr(\"text-anchor\", \"end\")\n      .text(([key]) =&gt; key);\n\n  year.append(\"g\")\n      .attr(\"text-anchor\", \"end\")\n    .selectAll()\n    .data(d3.range(1, 6))\n    .join(\"text\")\n      .attr(\"x\", -5)\n      .attr(\"y\", i =&gt; (countDay(i) + 0.5) * cellSize)\n      .attr(\"dy\", \"0.31em\")\n      .text(formatDay);\n\n  year.append(\"g\")\n    .selectAll()\n    .data(([, values]) =&gt; values.filter(d =&gt; ![0, 6].includes(d.date.getUTCDay())))\n    .join(\"rect\")\n      .attr(\"width\", cellSize - 1)\n      .attr(\"height\", cellSize - 1)\n      .attr(\"x\", d =&gt; timeWeek.count(d3.utcYear(d.date), d.date) * cellSize + 0.5)\n      .attr(\"y\", d =&gt; countDay(d.date.getUTCDay()) * cellSize + 0.5)\n      .attr(\"fill\", d =&gt; color(d.value))\n    .append(\"title\")\n      .text(d =&gt; `${formatDate(d.date)}\n${formatValue(d.value)}${d.close === undefined ? \"\" : `\n${formatClose(d.close)}`}`);\n\n  const month = year.append(\"g\")\n    .selectAll()\n    .data(([, values]) =&gt; d3.utcMonths(d3.utcMonth(values[0].date), values.at(-1).date))\n    .join(\"g\");\n\n  month.filter((d, i) =&gt; i).append(\"path\")\n      .attr(\"fill\", \"none\")\n      .attr(\"stroke\", \"#fff\")\n      .attr(\"stroke-width\", 3)\n      .attr(\"d\", pathMonth);\n\n  month.append(\"text\")\n      .attr(\"x\", d =&gt; timeWeek.count(d3.utcYear(d), timeWeek.ceil(d)) * cellSize + 2)\n      .attr(\"y\", -5)\n      .text(formatMonth);\n\n  return Object.assign(svg.node(), {scales: {color}});\n}"
-  },
-  {
     "objectID": "notes/notebooks/python-libraries/index.html",
     "href": "notes/notebooks/python-libraries/index.html",
     "title": "Python Libraries",
@@ -82,6 +40,69 @@
     "title": "Python Libraries",
     "section": "PyYAML",
     "text": "PyYAML\nPyYAML can be used to process and parse YAML files with Python.\nimport yaml\n\nwith open(\"file.yml\", 'r') as stream:\n    try:\n        config = yaml.safe_load(stream)\n        print(config)\n    except yaml.YAMLError as exc:\n        print(exc)"
+  },
+  {
+    "objectID": "notes/notebooks/D3/index.html",
+    "href": "notes/notebooks/D3/index.html",
+    "title": "Don’t Deploy on Fridays…",
+    "section": "",
+    "text": "In my latest exploration using D3, I visualized GitHub commit data from 2010-2021, focusing on commits mentioning the word “deploy” in the subject. The resulting chart revealed striking trends in the percent change of commits by day. Notably, Mondays exhibited the highest percentage change, shedding light on the cautionary maxim, “Don’t Deploy on Fridays.”\n\n\nCode\nd3 = require(\"d3@7\")\nimport {Legend} from \"@d3/color-legend\"\n\ncommits = FileAttachment(\"commits.csv\").csv({typed: true})\n\nkey = Legend(chart.scales.color, {title: \"Daily change\", tickFormat: \"+%\", marginLeft: 40})\n\nchart = {\n  const width = 928;\n  const cellSize = 17;\n  const height = cellSize * 7;\n\n\n  const formatValue = d3.format(\"+.2%\");\n  const formatClose = d3.format(\"$,.2f\");\n  const formatDate = d3.utcFormat(\"%x\");\n  const formatDay = i =&gt; \"SMTWTFS\"[i];\n  const formatMonth = d3.utcFormat(\"%b\");\n\n  const timeWeek = d3.utcMonday; \n  const countDay = i =&gt; (i + 6) % 7;\n\n  const data = d3.pairs(commits, ({commits: Previous}, {date, commits}) =&gt; ({\n    date: date,\n    value: (commits - Previous) / Previous,\n    commits: commits\n  }));\n\n  const max = d3.quantile(data, 0.9975, d =&gt; Math.abs(d.value));\n  const color = d3.scaleSequential(d3.interpolatePiYG).domain([-max, +max]);\n\n  const years = d3.groups(data, d =&gt; d.date.getUTCFullYear()).reverse();\n\n  function pathMonth(t) {\n    const d = Math.max(0, Math.min(5, countDay(t.getUTCDay())));\n    const w = timeWeek.count(d3.utcYear(t), t);\n    return `${d === 0 ? `M${w * cellSize},0`\n        : d === 5 ? `M${(w + 1) * cellSize},0`\n        : `M${(w + 1) * cellSize},0V${d * cellSize}H${w * cellSize}`}V${5 * cellSize}`;\n  }\n\n  const svg = d3.create(\"svg\")\n      .attr(\"width\", width)\n      .attr(\"height\", height * years.length)\n      .attr(\"viewBox\", [0, 0, width, height * years.length])\n      .attr(\"style\", \"max-width: 100%; height: auto; font: 10px sans-serif;\");\n\n  const year = svg.selectAll(\"g\")\n    .data(years)\n    .join(\"g\")\n      .attr(\"transform\", (d, i) =&gt; `translate(40.5,${height * i + cellSize * 1.5})`);\n\n  year.append(\"text\")\n      .attr(\"x\", -5)\n      .attr(\"y\", -5)\n      .attr(\"font-weight\", \"bold\")\n      .attr(\"text-anchor\", \"end\")\n      .text(([key]) =&gt; key);\n\n  year.append(\"g\")\n      .attr(\"text-anchor\", \"end\")\n    .selectAll()\n    .data(d3.range(1, 6))\n    .join(\"text\")\n      .attr(\"x\", -5)\n      .attr(\"y\", i =&gt; (countDay(i) + 0.5) * cellSize)\n      .attr(\"dy\", \"0.31em\")\n      .text(formatDay);\n\n  year.append(\"g\")\n    .selectAll()\n    .data(([, values]) =&gt; values.filter(d =&gt; ![0, 6].includes(d.date.getUTCDay())))\n    .join(\"rect\")\n      .attr(\"width\", cellSize - 1)\n      .attr(\"height\", cellSize - 1)\n      .attr(\"x\", d =&gt; timeWeek.count(d3.utcYear(d.date), d.date) * cellSize + 0.5)\n      .attr(\"y\", d =&gt; countDay(d.date.getUTCDay()) * cellSize + 0.5)\n      .attr(\"fill\", d =&gt; color(d.value))\n    .append(\"title\")\n      .text(d =&gt; `${formatDate(d.date)}\n${formatValue(d.value)}${d.close === undefined ? \"\" : `\n${formatClose(d.close)}`}`);\n\n  const month = year.append(\"g\")\n    .selectAll()\n    .data(([, values]) =&gt; d3.utcMonths(d3.utcMonth(values[0].date), values.at(-1).date))\n    .join(\"g\");\n\n  month.filter((d, i) =&gt; i).append(\"path\")\n      .attr(\"fill\", \"none\")\n      .attr(\"stroke\", \"#fff\")\n      .attr(\"stroke-width\", 3)\n      .attr(\"d\", pathMonth);\n\n  month.append(\"text\")\n      .attr(\"x\", d =&gt; timeWeek.count(d3.utcYear(d), timeWeek.ceil(d)) * cellSize + 2)\n      .attr(\"y\", -5)\n      .text(formatMonth);\n\n  return Object.assign(svg.node(), {scales: {color}});\n}"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Bradford Johnson",
+    "section": "",
+    "text": "Hey there, I’m Ford, a data analyst and storyteller with experience navigating the intersection of web analytics and big data. I’m skilled at untangling complex datasets to find useful insights and telling engaging stories with the data.\nBeyond the digital realm, you’ll often find me exploring the great outdoors, capturing moments through the lens of my camera, or embarking on hiking adventures.\nFeel free to explore my work on this site, where I share insights, projects, and a glimpse into my data journey."
+  },
+  {
+    "objectID": "gallery/index.html",
+    "href": "gallery/index.html",
+    "title": "Gallery",
+    "section": "",
+    "text": "This page showcases visualizations I’ve crafted over the years. Some of these visuals are part of broader analysis projects or demonstrations of specific techniques."
+  },
+  {
+    "objectID": "notes/index.html",
+    "href": "notes/index.html",
+    "title": "Notebooks",
+    "section": "",
+    "text": "Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nR Packages and Code\n\n\nNotes on R packages, and some neat code snippets.\n\n\nr, libraries, interesting\n\n\n\n\nDon’t Deploy on Fridays…\n\n\nExploring GitHub commits from 2010-2021 using D3.js.\n\n\njavascript, D3, visualization\n\n\n\n\nObservable Plot\n\n\nExploring Observable Plot\n\n\njavascript, libraries, visualization\n\n\n\n\nPython Libraries\n\n\nSome interesting / useful Python libraries that I have come across.\n\n\npython, libraries, interesting\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "notes/notebooks/observable-plot/index.html",
+    "href": "notes/notebooks/observable-plot/index.html",
+    "title": "Observable Plot",
+    "section": "",
+    "text": "Code\ndata = FileAttachment(\"trends.csv\").csv({ typed: true });\n\nviewof selectedQuery = Inputs.select(d3.group(data, d =&gt; d.query), {label:\"Query\"})\n\nPlot.plot({\n    marks: [\n        Plot.ruleY([0]),\n        Plot.lineY(selectedQuery, {\n            x: \"week\",\n            y: \"interest\",\n            curve: \"linear\",\n            stroke: \"query\",\n        }),\n        Plot.crosshair(data, {\n            x: \"week\",\n            y: \"interest\"\n        })\n    ]\n});"
+  },
+  {
+    "objectID": "notes/notebooks/observable-plot/index.html#google-search-trends---usa",
+    "href": "notes/notebooks/observable-plot/index.html#google-search-trends---usa",
+    "title": "Observable Plot",
+    "section": "",
+    "text": "Code\ndata = FileAttachment(\"trends.csv\").csv({ typed: true });\n\nviewof selectedQuery = Inputs.select(d3.group(data, d =&gt; d.query), {label:\"Query\"})\n\nPlot.plot({\n    marks: [\n        Plot.ruleY([0]),\n        Plot.lineY(selectedQuery, {\n            x: \"week\",\n            y: \"interest\",\n            curve: \"linear\",\n            stroke: \"query\",\n        }),\n        Plot.crosshair(data, {\n            x: \"week\",\n            y: \"interest\"\n        })\n    ]\n});"
+  },
+  {
+    "objectID": "notes/notebooks/r-packages/index.html",
+    "href": "notes/notebooks/r-packages/index.html",
+    "title": "R Packages and Code",
+    "section": "",
+    "text": "Helpful for creating reproducible environments - creates a lock file in JSON format that lists dependencies and versions. This lock file acts as a pointer to where the dependencies are stored on your machine, so you don’t have to install them every time you start a new project.\n# initalize renv\nrenv::init()\n\n# update renv.lock\nrenv::snapshot()\n\n# restore the project to the state saved in renv.lock\nrenv::restore()\n\n\nrenv.lock\n\n{\n  \"R\": {\n    \"Version\": \"4.2.2\",\n    \"Repositories\": [\n      {\n        \"Name\": \"CRAN\",\n        \"URL\": \"https://packagemanager.posit.co/cran/latest\"\n      }\n    ]\n  },\n  \"Packages\": {\n    \"dplyr\": {\n      \"Package\": \"dplyr\",\n      \"Version\": \"1.1.4\",\n      \"Source\": \"Repository\",\n      \"Repository\": \"CRAN\",\n      \"Requirements\": [\n        \"R\",\n        \"R6\",\n        \"cli\",\n        \"generics\",\n        \"glue\",\n        ...\n\n\n\n\nUseful when working with file paths in R - creates paths relative to top-level directory.\npath &lt;- here::here(\"path\", \"to\", \"file\", \"name.csv\")\n\npath &lt;- \"/path/to/file/name.csv\""
+  },
+  {
+    "objectID": "notes/notebooks/r-packages/index.html#workflow",
+    "href": "notes/notebooks/r-packages/index.html#workflow",
+    "title": "R Packages and Code",
+    "section": "",
+    "text": "Helpful for creating reproducible environments - creates a lock file in JSON format that lists dependencies and versions. This lock file acts as a pointer to where the dependencies are stored on your machine, so you don’t have to install them every time you start a new project.\n# initalize renv\nrenv::init()\n\n# update renv.lock\nrenv::snapshot()\n\n# restore the project to the state saved in renv.lock\nrenv::restore()\n\n\nrenv.lock\n\n{\n  \"R\": {\n    \"Version\": \"4.2.2\",\n    \"Repositories\": [\n      {\n        \"Name\": \"CRAN\",\n        \"URL\": \"https://packagemanager.posit.co/cran/latest\"\n      }\n    ]\n  },\n  \"Packages\": {\n    \"dplyr\": {\n      \"Package\": \"dplyr\",\n      \"Version\": \"1.1.4\",\n      \"Source\": \"Repository\",\n      \"Repository\": \"CRAN\",\n      \"Requirements\": [\n        \"R\",\n        \"R6\",\n        \"cli\",\n        \"generics\",\n        \"glue\",\n        ...\n\n\n\n\nUseful when working with file paths in R - creates paths relative to top-level directory.\npath &lt;- here::here(\"path\", \"to\", \"file\", \"name.csv\")\n\npath &lt;- \"/path/to/file/name.csv\""
+  },
+  {
+    "objectID": "notes/notebooks/r-packages/index.html#ggplot2-extensions",
+    "href": "notes/notebooks/r-packages/index.html#ggplot2-extensions",
+    "title": "R Packages and Code",
+    "section": "ggplot2 Extensions",
+    "text": "ggplot2 Extensions\nSee extension site for more."
   },
   {
     "objectID": "projects/project-repo/ggcolrr/index.html",
