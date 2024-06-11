@@ -1,17 +1,19 @@
 [
   {
-    "listing": "/projects/index.html",
-    "items": [
-      "/projects/project-repo/ggcolrr/index.html",
-      "/projects/project-repo/tidytuesday/index.html"
-    ]
-  },
-  {
     "listing": "/notes/index.html",
     "items": [
+      "/notes/notebooks/r-packages/index.html",
       "/notes/notebooks/D3/index.html",
       "/notes/notebooks/observable-plot/index.html",
       "/notes/notebooks/python-libraries/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/project-repo/data-visual-typology/index.html",
+      "/projects/project-repo/ggcolrr/index.html",
+      "/projects/project-repo/tidytuesday/index.html"
     ]
   }
 ]

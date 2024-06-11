@@ -1,0 +1,87 @@
+---
+title: "R Packages and Code"
+description: "Notes on R packages, and some neat code snippets."
+author: "Ford Johnson"
+date: "6/2/2024"
+categories:
+  - r
+  - libraries
+  - interesting
+toc: true
+---
+
+## Workflow
+
+### `renv`
+
+Helpful for creating reproducible environments - creates a lock file in JSON format that lists dependencies and versions. This lock file acts as a pointer to where the dependencies are stored on your machine, so you don't have to install them every time you start a new project.
+
+```r
+# initalize renv
+renv::init()
+
+# update renv.lock
+renv::snapshot()
+
+# restore the project to the state saved in renv.lock
+renv::restore()
+```
+
+```{.json filename="renv.lock"}
+{
+  "R": {
+    "Version": "4.2.2",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://packagemanager.posit.co/cran/latest"
+      }
+    ]
+  },
+  "Packages": {
+    "dplyr": {
+      "Package": "dplyr",
+      "Version": "1.1.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "R6",
+        "cli",
+        "generics",
+        "glue",
+        ...
+```
+
+### `here`
+
+Useful when working with file paths in R - creates paths relative to top-level directory.
+
+```r
+path <- here::here("path", "to", "file", "name.csv")
+
+path <- "/path/to/file/name.csv"
+```
+
+## ggplot2 Extensions
+
+See [extension site](https://exts.ggplot2.tidyverse.org/) for more.
+
+## Visualization
+
+### `magick`
+
+For image processing in R.
+
+Appending images:
+
+```r
+library(magick)
+
+image_1 <- image_read("image1.png")
+image_2 <- image_read("image2.png")
+
+appended_images <- image_append(c(image_1, image_2), stack = TRUE)
+
+image_write(appended_images, "appended_images.png")
+```

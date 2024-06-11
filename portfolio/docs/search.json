@@ -14,11 +14,39 @@
     "text": "TidyTuesday is a weekly community project that creates a space for data enthusiasts to share and learn.\nThe focus is using R and the tidyverse package to clean, wrangle, and visualize data. Each week a new dataset is released and participants are encouraged to explore and visualize the data in creative ways.\nI try to participate in TidyTuesday as often as I can - as it’s a great way to grow my skills and learn from others.\nThis page is a collection of my favortie TidyTuesday contributions.\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisualGif\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual\n\n\n\n\n\n\n\n\n\n\nVisual"
   },
   {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
+    "objectID": "projects/project-repo/data-visual-typology/index.html",
+    "href": "projects/project-repo/data-visual-typology/index.html",
+    "title": "Typology of Data Visualizations",
     "section": "",
-    "text": "Discover a collection of impactful data analysis projects showcasing my expertise and creativity in action.\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nMay 27, 2024\n\n\nCreating my own R package: ggcolrr\n\n\nExploring R package development to enhance ggplot2 with better code and visual theme management.\n\n\npackages, r, visualization\n\n\n\n\nJan 1, 2023\n\n\nTidyTuesday\n\n\n\n\n\ntidytuesday, r, visualization\n\n\n\n\n\nNo matching items"
+    "text": "In photography, a typology is a series of images that share a common subject or theme. Each photograph contributes to a larger narrative, and the series as a whole provides a more comprehensive understanding of the subject than any individual image. In college I took a photography class and was introduced to this concept which I found fascinating. For that class I created my own typology of water spigots around campus.\n\nI wanted to apply this concept to data visualizations. So I used R and ggplot2 to create some common visualizations and grouped them by type. For each type, I wanted to show an evolution of complexity. I started with the most basic form for each visualization and then added more complexity to show how the visualization can be modified to show more information, or show information in a different manner.\nTo fully embrace the concept of a typology, I created a distinct visual theme to be shared by visualizations, carefully selecting colors, fonts, and other design elements. This approach ensures that comparing the visualizations is a breeze, allowing viewers to effortlessly identify the overarching narrative.\n\nI wanted to add more visuals but as you add each plot, each plot becomes smaller and harder to see. I enjoyed creating this and I had fun diving into some new funtions and packages that extend ggplot2. Feel free to check out the code and let me know what you think!"
+  },
+  {
+    "objectID": "notes/notebooks/r-packages/index.html",
+    "href": "notes/notebooks/r-packages/index.html",
+    "title": "R Packages and Code",
+    "section": "",
+    "text": "Helpful for creating reproducible environments - creates a lock file in JSON format that lists dependencies and versions. This lock file acts as a pointer to where the dependencies are stored on your machine, so you don’t have to install them every time you start a new project.\n# initalize renv\nrenv::init()\n\n# update renv.lock\nrenv::snapshot()\n\n# restore the project to the state saved in renv.lock\nrenv::restore()\n\n\nrenv.lock\n\n{\n  \"R\": {\n    \"Version\": \"4.2.2\",\n    \"Repositories\": [\n      {\n        \"Name\": \"CRAN\",\n        \"URL\": \"https://packagemanager.posit.co/cran/latest\"\n      }\n    ]\n  },\n  \"Packages\": {\n    \"dplyr\": {\n      \"Package\": \"dplyr\",\n      \"Version\": \"1.1.4\",\n      \"Source\": \"Repository\",\n      \"Repository\": \"CRAN\",\n      \"Requirements\": [\n        \"R\",\n        \"R6\",\n        \"cli\",\n        \"generics\",\n        \"glue\",\n        ...\n\n\n\n\nUseful when working with file paths in R - creates paths relative to top-level directory.\npath &lt;- here::here(\"path\", \"to\", \"file\", \"name.csv\")\n\npath &lt;- \"/path/to/file/name.csv\""
+  },
+  {
+    "objectID": "notes/notebooks/r-packages/index.html#workflow",
+    "href": "notes/notebooks/r-packages/index.html#workflow",
+    "title": "R Packages and Code",
+    "section": "",
+    "text": "Helpful for creating reproducible environments - creates a lock file in JSON format that lists dependencies and versions. This lock file acts as a pointer to where the dependencies are stored on your machine, so you don’t have to install them every time you start a new project.\n# initalize renv\nrenv::init()\n\n# update renv.lock\nrenv::snapshot()\n\n# restore the project to the state saved in renv.lock\nrenv::restore()\n\n\nrenv.lock\n\n{\n  \"R\": {\n    \"Version\": \"4.2.2\",\n    \"Repositories\": [\n      {\n        \"Name\": \"CRAN\",\n        \"URL\": \"https://packagemanager.posit.co/cran/latest\"\n      }\n    ]\n  },\n  \"Packages\": {\n    \"dplyr\": {\n      \"Package\": \"dplyr\",\n      \"Version\": \"1.1.4\",\n      \"Source\": \"Repository\",\n      \"Repository\": \"CRAN\",\n      \"Requirements\": [\n        \"R\",\n        \"R6\",\n        \"cli\",\n        \"generics\",\n        \"glue\",\n        ...\n\n\n\n\nUseful when working with file paths in R - creates paths relative to top-level directory.\npath &lt;- here::here(\"path\", \"to\", \"file\", \"name.csv\")\n\npath &lt;- \"/path/to/file/name.csv\""
+  },
+  {
+    "objectID": "notes/notebooks/r-packages/index.html#ggplot2-extensions",
+    "href": "notes/notebooks/r-packages/index.html#ggplot2-extensions",
+    "title": "R Packages and Code",
+    "section": "ggplot2 Extensions",
+    "text": "ggplot2 Extensions\nSee extension site for more."
+  },
+  {
+    "objectID": "notes/notebooks/r-packages/index.html#visualization",
+    "href": "notes/notebooks/r-packages/index.html#visualization",
+    "title": "R Packages and Code",
+    "section": "Visualization",
+    "text": "Visualization\n\nmagick\nFor image processing in R.\nAppending images:\nlibrary(magick)\n\nimage_1 &lt;- image_read(\"image1.png\")\nimage_2 &lt;- image_read(\"image2.png\")\n\nappended_images &lt;- image_append(c(image_1, image_2), stack = TRUE)\n\nimage_write(appended_images, \"appended_images.png\")"
   },
   {
     "objectID": "notes/notebooks/observable-plot/index.html",
@@ -39,7 +67,7 @@
     "href": "notes/index.html",
     "title": "Notebooks",
     "section": "",
-    "text": "Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nDon’t Deploy on Fridays…\n\n\nExploring GitHub commits from 2010-2021 using D3.js.\n\n\njavascript, D3, visualization\n\n\n\n\nObservable Plot\n\n\nExploring Observable Plot\n\n\njavascript, libraries, visualization\n\n\n\n\nPython Libraries\n\n\nSome interesting / useful Python libraries that I have come across.\n\n\npython, libraries, interesting\n\n\n\n\n\nNo matching items"
+    "text": "Feel free to browse my notebook collection, documenting interesting findings for self-reference and sharing. Reach out with any questions or feedback.\n\n\n\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nR Packages and Code\n\n\nNotes on R packages, and some neat code snippets.\n\n\nr, libraries, interesting\n\n\n\n\nDon’t Deploy on Fridays…\n\n\nExploring GitHub commits from 2010-2021 using D3.js.\n\n\njavascript, D3, visualization\n\n\n\n\nObservable Plot\n\n\nExploring Observable Plot\n\n\njavascript, libraries, visualization\n\n\n\n\nPython Libraries\n\n\nSome interesting / useful Python libraries that I have come across.\n\n\npython, libraries, interesting\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "gallery/index.html",
@@ -82,6 +110,13 @@
     "title": "Python Libraries",
     "section": "PyYAML",
     "text": "PyYAML\nPyYAML can be used to process and parse YAML files with Python.\nimport yaml\n\nwith open(\"file.yml\", 'r') as stream:\n    try:\n        config = yaml.safe_load(stream)\n        print(config)\n    except yaml.YAMLError as exc:\n        print(exc)"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Discover a collection of impactful data analysis projects showcasing my expertise and creativity in action.\n\n\n\n\n\n\n\n\n\nDate\n\n\nTitle\n\n\nDescription\n\n\nCategories\n\n\n\n\n\n\nJun 8, 2024\n\n\nTypology of Data Visualizations\n\n\nApplying typology from photography to data visualizations.\n\n\nr, visualization\n\n\n\n\nMay 27, 2024\n\n\nCreating my own R package: ggcolrr\n\n\nExploring R package development to enhance ggplot2 with better code and visual theme management.\n\n\npackages, r, visualization\n\n\n\n\nJan 1, 2023\n\n\nTidyTuesday\n\n\n\n\n\ntidytuesday, r, visualization\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "projects/project-repo/ggcolrr/index.html",
