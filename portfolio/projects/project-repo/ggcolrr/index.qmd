@@ -1,5 +1,6 @@
 ---
 title: "Creating my own R package: ggcolrr"
+draft: true
 author: "Ford Johnson"
 date: "2024-05-27"
 categories: [packages, r, visualization]

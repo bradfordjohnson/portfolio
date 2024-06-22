@@ -1,5 +1,6 @@
 ---
 title: "Notebooks"
+draft: true
 listing:
   id: notebooks-listing
   contents: notebooks
