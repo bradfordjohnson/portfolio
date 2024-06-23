@@ -21,17 +21,15 @@ website:
       - text: Projects 
         href: projects/index.qmd
 
-      - text: Notes
-        href: notes/index.qmd
+      # - text: Notes
+      #   href: notes/index.qmd
     right:
       - icon: github
         href: https://github.com/bradfordjohnson/portfolio
   page-footer: 
     left: |
       <br>
-      Copyright &copy; 2024 Bradford Johnson<br>
-      Built with 
-      [![](/assets/quarto.png){fig-alt="Quarto" width=65px}](https://quarto.org)
+      Copyright &copy; 2024 Bradford Johnson
       
 format:
   html:
