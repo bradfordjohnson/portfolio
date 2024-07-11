@@ -21,8 +21,8 @@ website:
       - text: Projects 
         href: projects/index.qmd
 
-      - text: Notes
-        href: notes/index.qmd
+      # - text: Notes
+      #   href: notes/index.qmd
     right:
       - icon: github
         href: https://github.com/bradfordjohnson/portfolio
