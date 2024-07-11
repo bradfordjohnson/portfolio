@@ -21,21 +21,22 @@ website:
       - text: Projects 
         href: projects/index.qmd
 
-      # - text: Notes
-      #   href: notes/index.qmd
+      - text: Notes
+        href: notes/index.qmd
     right:
       - icon: github
         href: https://github.com/bradfordjohnson/portfolio
   page-footer: 
     left: |
       <br>
-      Copyright &copy; 2024 Bradford Johnson
+      Copyright &copy; 2024 Bradford Johnson<br>
       
 format:
   html:
+    include-in-header:
+      - text: <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-NCVZNLSV');</script>
+    include-before-body:
+      - text: <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NCVZNLSV"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     theme: [cosmo.scss]
     css: styles.css
     link-external-newwindow: true
-
-
-
