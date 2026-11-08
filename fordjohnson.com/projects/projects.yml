@@ -7,7 +7,9 @@
   description: >
     A local analytics pipeline for reconstructing daily snapshots, filling historical gaps, and tracking player statistics over time.
 
-# TODO: build out project page
+# TODO:
+#   - build out project page
+#   - finish project
 - title: Web Telemetry & Analytics Engine
   href: projects/web-telemetry-engine/index.qmd
   is_featured: false

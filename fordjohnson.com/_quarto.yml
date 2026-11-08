@@ -1,7 +1,6 @@
 profile:
   default: prod
-  # for dev profile run:
-  # quarto preview --profile dev
+  # quarto preview --profile ...
 
 project:
   type: website
@@ -37,12 +36,10 @@ website:
         - section: "Digital Garden"
           href: garden/index.qmd
           contents:
-            - section: "Instrumentation"
+            - section: "section"
               contents:
-                - garden/instrumentation/data-layer.qmd
-                - garden/instrumentation/tag-management.qmd
-                - garden/instrumentation/browser-cookies.qmd
-                - garden/instrumentation/experimentation.qmd
+                - text: stopsign
+                  href: garden/placeholder.qmd
 
     - id: projects
       style: docked
@@ -51,9 +48,8 @@ website:
         - section: "Projects"
           href: index.qmd#selected-work
           contents:
-            - projects/tidytuesday/index.qmd
+            # - projects/tidytuesday/index.qmd
             - projects/pretzel-index/index.qmd
-            - projects/web-telemetry-engine/index.qmd
 
 format:
   html:

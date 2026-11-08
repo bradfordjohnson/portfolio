@@ -1,0 +1,89 @@
+---
+title: Digital Garden
+subtitle: >
+    Ideas, experiments, and things worth exploring.
+listing:
+  - id: guide-links
+    template: ../_assets/_links.ejs
+    contents: garden.yml
+
+toc: false
+---
+
+::: {#guide-links}
+:::
+
+```{=html}
+<!-- https://github.com/quarto-dev/quarto-web/blob/5251a751b2b78156a1c1fbd9ae5f72e085d4834f/_extensions/quartoorg/scss/partials/_cards.scss#L58 -->
+<style>
+@media (max-width: 575px) {
+    .link-cards .card {
+    margin-bottom: 20px;
+    margin-right: 35px;
+    }
+}
+@media (min-width: 576px) { 
+    .link-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    }
+    .link-cards .card {
+    width: 190px;
+    margin: 0 20px 12px 0;
+    }
+}
+.link-cards .card {
+  border: none;
+  padding: 0;
+}
+/* Card titles are h2 for heading order; keep the old h4 look */
+.link-cards .card-title h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.2;
+  opacity: 0.9;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+.link-cards .card-title p {
+  margin-bottom: 0;
+}
+.link-cards .card-subtitle p {
+  line-height: 1.2;
+  opacity: 0.9;
+  margin-bottom: 0.5rem;
+}
+.link-cards .card-subtitle {
+  margin-bottom: 0.7rem;
+}
+.link-cards .card-body {
+  padding: 0.5rem;
+  padding-left: 0.1rem;
+}
+.link-cards .card-body ul {
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+.link-cards .card-body ul a {
+  text-decoration: none;
+}
+.link-cards .card-body ul li {
+  padding-bottom: 0.2rem;
+}
+.link-cards .card-body ul {
+    list-style-type: none;
+    padding-left: 0em;
+}
+.link-cards .card-body a {
+    text-decoration: none;
+}
+li {
+    display: list-item;
+    unicode-bidi: isolate;
+}
+</style>
+```

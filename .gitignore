@@ -1,12 +1,18 @@
-*/.quarto/
-*/_site/
-*/_freeze/
+# quarto
+**/.quarto/
+**/_site/
+**/_freeze/
 **/*.quarto_ipynb
+**/.gitignore
+
+# system
 .DS_Store
+
+# node & TS
 node_modules/
 */_assets/_js/
 *.tsbuildinfo
-fordjohnson.com/.gitignore
+
+# env & local overrides
 *.local
 _analytics.html
-garden/
