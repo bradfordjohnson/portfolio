@@ -1,0 +1,40 @@
+# TODO:
+#   - build out project page
+#   - finish project
+- title: Minecraft Analytics Pipeline
+  href: projects/minecraft/index.html # does not yet exist
+  is_featured: false
+  description: >
+    A local analytics pipeline for reconstructing daily snapshots, filling historical gaps, and tracking player statistics over time.
+
+# TODO: build out project page
+- title: Web Telemetry & Analytics Engine
+  href: projects/web-telemetry-engine/index.qmd
+  is_featured: false
+  description: >
+    Collecting, cleaning, modeling, and visualizing the data behind this site... including the interactions that bring you here.
+
+- title: Pretzel Index
+  href: projects/pretzel-index/index.qmd
+  is_featured: true
+  description: >
+    A weighted scoring framework for evaluating pretzel quality across texture, salt distribution, and price-to-value.
+
+- title: golfr
+  href: https://github.com/bradfordjohnson/golfr
+  is_featured: true
+  description: >
+    Simulating Topgolf games each day using R
+
+- title: ggraincloud
+  href: https://github.com/bradfordjohnson/ggraincloud
+  is_featured: true
+  description: >
+    Easy raincloud plots with R
+
+# TODO: build out new gallery
+- title: TidyTuesday
+  href: projects/tidytuesday/index.qmd
+  is_featured: false
+  description: >
+    Weekly data visualizations

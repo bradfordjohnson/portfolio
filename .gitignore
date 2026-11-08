@@ -1,0 +1,13 @@
+*/.quarto/
+*/_site/
+*/_freeze/
+**/*.quarto_ipynb
+.DS_Store
+node_modules/
+*/_assets/_js/
+*.tsbuildinfo
+fordjohnson.com/.gitignore
+*.local
+_analytics.html
+garden/
+.github

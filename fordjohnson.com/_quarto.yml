@@ -1,0 +1,72 @@
+profile:
+  default: prod
+  # for dev profile run:
+  # quarto preview --profile dev
+
+project:
+  type: website
+  output-dir: _site
+  
+  # TS build step testing - no longer doing this but retaining for future reference
+  # maybe I could put this in a quarto profile?
+  #
+  # resources:
+  #   - _assets/_js/**
+  # pre-render: npm run build
+  
+  preview:
+    port: 4000
+    timeout: 1200
+
+website:
+  title: "Ford Johnson"
+  site-url: "https://fordjohnson.com"
+  llms-txt: true
+  search: false
+  favicon: "_assets/_images/favicon.png"
+  google-analytics:
+    tracking-id: "GTM-PF2MWQN4"
+  
+    # https://quarto.org/docs/websites/website-navigation.html#side-navigation
+  sidebar:
+    - id: garden
+      border: false
+      style: docked
+      collapse-level: 2
+      contents:
+        - section: "Digital Garden"
+          href: garden/index.qmd
+          contents:
+            - section: "Instrumentation"
+              contents:
+                - garden/instrumentation/data-layer.qmd
+                - garden/instrumentation/tag-management.qmd
+                - garden/instrumentation/browser-cookies.qmd
+                - garden/instrumentation/experimentation.qmd
+
+    - id: projects
+      style: docked
+      collapse-level: 2
+      contents:
+        - section: "Projects"
+          href: index.qmd#selected-work
+          contents:
+            - projects/tidytuesday/index.qmd
+            - projects/pretzel-index/index.qmd
+            - projects/web-telemetry-engine/index.qmd
+
+format:
+  html:
+    strip-comments: true
+    respect-user-color-scheme: true
+    theme:
+      light: _assets/_styles/flatly.scss
+      dark: _assets/_styles/darkly.scss
+    toc: false
+    anchor-sections: false
+    # include-in-header:
+    #   - text: |
+    #       <script>
+    #       window.dataLayer = window.dataLayer || [];
+    #       </script>
+    #   - file: _assets/_analytics.html

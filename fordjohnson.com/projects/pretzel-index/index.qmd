@@ -1,0 +1,89 @@
+---
+title: Pretzel Index
+description-meta: A weighted scoring framework for evaluating pretzel quality across texture, salt distribution, and price-to-value.
+---
+
+{{< meta description-meta >}}
+
+::: {.callout-note}
+Scoring pretzels, one bite at a time! Data collection is in progress; stay tuned for the ultimate rankings.
+:::
+
+## Motivation
+
+My wife and I love trying new spots and always order a hot pretzel to compare against past favorites. We even had pretzels and cheese as a late-night snack at our wedding. That shared obsession sparked a simple idea: build a proper scoring framework to rank every pretzel we try.
+
+## The Pretzel Index (PI)
+
+::: {.panel-tabset}
+
+## Metric Breakdown
+
+To keep rankings balanced, every pretzel is rated 1–10 across four key attributes weighted by their impact on the overall experience:
+
+| Attribute | Weight | Description |
+|:---|:---:|:---|
+| **Texture & Structure** | **35%** | Crust crispness, chewiness, and knot integrity. |
+| **Freshness & Temp** | **30%** | Thermal state and fresh-baked quality. |
+| **Salt & Seasoning** | **20%** | Distribution uniformity and grain density. |
+| **Price-to-Value** | **15%** | Portion size relative to menu price. |
+
+: CPI Metric Breakdown {.striped}
+
+## Individual Metric Weights
+
+| Metric                             | Metric Group                    | CPI Weight (%) |
+|------------------------------------|----------------------------------|------------|
+| Crunch-to-Chew Ratio (CCR)        | Texture & Structure          | 10%        |
+| Knot Integrity                    | Texture & Structure          | 10%        |
+| Density & Airiness                | Texture & Structure          | 5%         |
+| Salt / Sugar + Cinnamon Distribution & Quality (SDQ) | Flavor & Seasoning           | 10%        |
+| Dough Flavor & Complexity (DFC)   | Flavor & Seasoning           | 5%         |
+| Buttery Goodness                  | Flavor & Seasoning           | 5%         |
+| Fresh-Baked Factor (FBF)          | Freshness & Temperature      | 15%        |
+| Dip Compatibility Score           | Dipping Sauce Factor         | 10%        |
+| Shareability                      | Overall Enjoyment & Presentation | 15%        |
+| Satisfaction Score (SS)           | Overall Enjoyment & Presentation | 10%        |
+| Presentation & Aesthetics (PA)    | Overall Enjoyment & Presentation | 5%         |
+
+: CPI Composite Score Weights by Metric {.striped}
+
+:::
+
+## Accounting for Recency
+
+A spot that was incredible months ago shouldn't ride on old glory if recent quality drops. To prioritize current performance without throwing out history, past visits decay exponentially based on elapsed time ($t$) and a chosen half-life ($T_{1/2}$):
+
+$$\lambda_i = \exp\left(-\frac{\ln(2)}{T_{1/2}} \times t_i\right)$$
+
+Combining these yields the **Decay-Adjusted Score (DAS)**-the primary metric used for live standings:
+
+$$\text{DAS} = 10 \times \frac{\sum (\lambda_i \times \text{CPI}_i)}{\sum \lambda_i}$$
+
+## Current Standings
+
+::: {.panel-tabset}
+
+## Current Standings
+
+| Restaurant | Pretzel Type | # of Rankings | Adjusted CPI Score |
+|------------|--------------|---------------|--------------------|
+| Holy City  | Salt         | 3             | 82.35%             |
+| DIG In The Park | Salt    | 1             | 89.00%             |
+| The Heidelberg  | Salt    | 1             | 88.50%             |
+
+: Current Standings {.striped}
+
+## Logged Observations
+
+| Restaurant | Pretzel Type | Visit Number | Menu Price | Base CPI Score |
+|------------|--------------|--------------|------------|----------------|
+| Holy City  | Salt         | 1            | $6.50      | 79.00%         |
+| Holy City  | Salt         | 2            | $6.50      | 81.50%         |
+| Holy City  | Salt         | 3            | $6.50      | 83.50%         |
+| DIG In The Park  | Salt   | 1            | $10.99     | 89.00%         |
+| The Heidelberg   | Salt   | 1            | $11.95     | 88.50%         |
+
+: Logged Observations {.striped}
+
+:::

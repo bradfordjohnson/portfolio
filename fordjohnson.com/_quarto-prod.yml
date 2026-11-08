@@ -1,0 +1,10 @@
+# https://quarto.org/docs/projects/profiles.html#profile-configuration
+# https://quarto.org/docs/authoring/conditional.html#matching-against-metadata
+show_draft_content: false
+
+# explicit render targets for prod profile
+project:
+  render:
+    - index.qmd
+    - projects/pretzel-index/index.qmd
+    - 404.qmd
