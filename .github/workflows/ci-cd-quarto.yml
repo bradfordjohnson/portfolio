@@ -1,0 +1,64 @@
+name: Quarto CI/CD Deployment
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "fordjohnson.com/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+jobs:
+  build-deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      # - name: Setup R
+      #   uses: r-lib/actions/setup-r@v2
+      #   with:
+      #     r-version: 'release'
+      #     use-public-rspm: true
+
+      # - name: Install R dependencies
+      #   uses: r-lib/actions/setup-r-dependencies@v2
+      #   with:
+      #     packages: |
+      #       R6
+      #       tidyverse
+      #       showtext
+      #       htmltools
+      #       gghighlight
+      #       ggtext
+
+      - name: Render Quarto Project
+        run: quarto render fordjohnson.com --profile prod
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: fordjohnson.com/_site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
