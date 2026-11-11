@@ -1,6 +1,6 @@
 ```{=html}
 <% for (const item of items) { %>
-  <a href="<%= item.href %>" class="project-row" data-text="<%= item.title %>">
+  <a href="<%= item.href %>" class="project-row" data-element-text="<%= item.title %>" data-ui-section="projects listing">
     <!-- <h5><%= item.title %> <span>↗</span></h5> -->
     <h5><%= item.title %> <span></span></h5>
     <small><%= item.subtitle %></small>
