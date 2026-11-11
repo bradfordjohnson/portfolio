@@ -1,0 +1,53 @@
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-PF2MWQN4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+</script>
+
+<script>
+(function () {
+  document.addEventListener('click', function (event) {
+    var target = event.target.closest(
+      'a, button, [role="button"], [data-track-click]'
+    );
+
+    if (!target || target.getAttribute('data-track-click') === 'false') return;
+
+    var childAria = target.querySelector('[aria-label]');
+    var childAlt = target.querySelector('[alt]');
+
+    var text = (
+      target.getAttribute('data-element-text') ||
+      target.getAttribute('aria-label') ||
+      (childAria && childAria.getAttribute('aria-label')) ||
+      (childAlt && childAlt.getAttribute('alt')) ||
+      target.innerText ||
+      target.textContent ||
+      target.getAttribute('alt') ||
+      ''
+    ).trim();
+
+    var isLink = target.tagName === 'A' || target.hasAttribute('href');
+    var isButton = target.tagName === 'BUTTON' || target.getAttribute('role') === 'button';
+
+    var clickData = {
+      ui_section: target.getAttribute('data-ui-section') || undefined,
+      element_type: target.getAttribute('data-element-type') ||
+        (isLink ? 'link' : isButton ? 'button' : target.tagName.toLowerCase()),
+      target_url: target.getAttribute('data-target-url') ||
+        target.getAttribute('href') || undefined,
+      element_text: text || undefined,
+      from_analytics: true
+    };
+
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'ui_click',
+      eventModel: clickData
+    });
+
+    // console.info('[Analytics] ui_click', clickData);
+  });
+})();
+</script>

@@ -23,8 +23,6 @@ website:
   llms-txt: true
   search: false
   favicon: "_assets/_images/favicon.png"
-  google-analytics:
-    tracking-id: "GTM-PF2MWQN4"
   
     # https://quarto.org/docs/websites/website-navigation.html#side-navigation
   sidebar:
@@ -60,9 +58,5 @@ format:
       dark: _assets/_styles/darkly.scss
     toc: false
     anchor-sections: false
-    # include-in-header:
-    #   - text: |
-    #       <script>
-    #       window.dataLayer = window.dataLayer || [];
-    #       </script>
-    #   - file: _assets/_analytics.html
+    include-in-header:
+      - file: _assets/_analytics.html
